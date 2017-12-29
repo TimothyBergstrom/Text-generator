@@ -1,0 +1,678 @@
+2017-12-29 23:38:02,044 - __main__ - INFO - --------------------START OF RUN--------------------
+2017-12-29 23:38:02,087 - __main__ - INFO - It took 0.040038108825683594 seconds to load 99922 patterns
+2017-12-29 23:38:02,088 - __main__ - INFO - Total Characters: 99992
+2017-12-29 23:38:02,088 - __main__ - INFO - Total Vocab: 62
+2017-12-29 23:38:02,089 - __main__ - INFO - Total Words: 18582
+2017-12-29 23:38:02,092 - __main__ - INFO - Total Unique Words: 5235
+2017-12-29 23:38:02,092 - __main__ - INFO - Total Patterns: 99922
+2017-12-29 23:38:04,612 - __main__ - INFO - Dataset is 3469.29184 mb in memory
+2017-12-29 23:38:05,731 - __main__ - INFO - _________________________________________________________________
+2017-12-29 23:38:05,731 - __main__ - INFO - Layer (type)                 Output Shape              Param #   
+2017-12-29 23:38:05,732 - __main__ - INFO - =================================================================
+2017-12-29 23:38:05,732 - __main__ - INFO - lstm_1 (LSTM)                (None, 70, 512)           1177600   
+2017-12-29 23:38:05,732 - __main__ - INFO - _________________________________________________________________
+2017-12-29 23:38:05,732 - __main__ - INFO - dropout_1 (Dropout)          (None, 70, 512)           0         
+2017-12-29 23:38:05,732 - __main__ - INFO - _________________________________________________________________
+2017-12-29 23:38:05,732 - __main__ - INFO - lstm_2 (LSTM)                (None, 512)               2099200   
+2017-12-29 23:38:05,733 - __main__ - INFO - _________________________________________________________________
+2017-12-29 23:38:05,733 - __main__ - INFO - dropout_2 (Dropout)          (None, 512)               0         
+2017-12-29 23:38:05,733 - __main__ - INFO - _________________________________________________________________
+2017-12-29 23:38:05,733 - __main__ - INFO - dense_1 (Dense)              (None, 62)                31806     
+2017-12-29 23:38:05,733 - __main__ - INFO - _________________________________________________________________
+2017-12-29 23:38:05,733 - __main__ - INFO - activation_1 (Activation)    (None, 62)                0         
+2017-12-29 23:38:05,733 - __main__ - INFO - =================================================================
+2017-12-29 23:38:05,734 - __main__ - INFO - Total params: 3,308,606
+2017-12-29 23:38:05,734 - __main__ - INFO - Trainable params: 3,308,606
+2017-12-29 23:38:05,734 - __main__ - INFO - Non-trainable params: 0
+2017-12-29 23:38:05,734 - __main__ - INFO - _________________________________________________________________
+2017-12-29 23:38:05,734 - __main__ - INFO - None
+2017-12-29 23:38:05,881 - __main__ - INFO - ----------Iteration 1 out of 200----------
+2017-12-29 23:40:30,823 - __main__ - INFO - Loss: 2.9166 Acc: 0.2242 Val Loss: 2.3303 Val Acc: 0.3346
+2017-12-29 23:40:30,901 - __main__ - INFO - Seed: 
+has not wonders of her? I will go;
+For hers he on. Lather than liberty
+2017-12-29 23:40:30,901 - __main__ - INFO - Target: 
+ there is
+remember'd, rivel when should I be wooing his love
+Turns freely on the dotas that foots de
+2017-12-29 23:40:35,551 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ and and and and and and and and and and and and and and and and and and and and and and and and and
+2017-12-29 23:40:40,074 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ the meand and the the the me and the heind the me the mand the the mere the me the mand the me the 
+2017-12-29 23:40:44,569 - __main__ - INFO - Temperature: 0.4, Generated text: 
+the the with and me that and and thith the pare and mo and it the meeisethest they whe whee that my 
+2017-12-29 23:40:49,075 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ome theine whes po mathere the mathy and in thuile mome, the asele freale, thee wing.
+Bud and the al
+2017-12-29 23:40:53,636 - __main__ - INFO - Temperature: 0.8, Generated text: 
+lethes hishi hothein,
+And thele andeentow,:
+Fnole wome os ir theeserning chimi thour hishy, theand t
+2017-12-29 23:40:58,160 - __main__ - INFO - Temperature: 1.0, Generated text: 
+hail shaissrecfithe, and mome the dede briy't my uceldind andsand thy lisasey of preibs;enh encs
+hei
+2017-12-29 23:41:02,677 - __main__ - INFO - Temperature: 1.2, Generated text: 
+m mn
+Wovile yuumoaood beos wiily scecma
+hereno I lwolle'nitbC
+I'ssecling, whanl be'ry;.
+
+LTLAKSeOn,:
+2017-12-29 23:41:02,679 - __main__ - INFO - ----------Iteration 2 out of 200----------
+2017-12-29 23:43:23,684 - __main__ - INFO - Loss: 2.1269 Acc: 0.3881 Val Loss: 1.961 Val Acc: 0.4206
+2017-12-29 23:43:23,758 - __main__ - INFO - Seed: 
+ yours: if dishonour call our fault
+That it gives ere my true maids in
+2017-12-29 23:43:23,759 - __main__ - INFO - Target: 
+ defile of every temperance his
+Dust was desired.
+
+DUKE VINCENTIO:
+Ha! a stinf, and most sword: how 
+2017-12-29 23:43:28,291 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ the pair to the with the with the with the with the with the with the with the with the with the wi
+2017-12-29 23:43:32,862 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ll me some to your hear and to the cames and the with the pair to the his to a would to the will to 
+2017-12-29 23:43:37,438 - __main__ - INFO - Temperature: 0.4, Generated text: 
+your to me and come to the to deare to the wis me be to be to your the came and but go well the pair
+2017-12-29 23:43:41,952 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ on the good and to him for in the giege,
+And me couse her make the peased and with thee somes thee 
+2017-12-29 23:43:46,575 - __main__ - INFO - Temperature: 0.8, Generated text: 
+frues he't somemance
+Weir upoat with nat, and heart to heavemand to bime to me sen your himad to the
+2017-12-29 23:43:51,131 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ wolld,
+Se with beaskp! fould As his wie prempors tull; till ploiget theiss
+I he we the seakige, usc
+2017-12-29 23:43:55,652 - __main__ - INFO - Temperature: 1.2, Generated text: 
+iads of to the Thame, though caly groe sonithed
+BAck of cilirn, Lever to veren.
+
+FLASR VVoued:
+
+MLAA
+2017-12-29 23:43:55,653 - __main__ - INFO - ----------Iteration 3 out of 200----------
+2017-12-29 23:46:17,512 - __main__ - INFO - Loss: 1.8317 Acc: 0.4558 Val Loss: 1.8201 Val Acc: 0.4597
+2017-12-29 23:46:17,595 - __main__ - INFO - Seed: 
+usband, then, untid thy ever
+stood together: I will have to tell her e
+2017-12-29 23:46:17,596 - __main__ - INFO - Target: 
+ntertainment
+When my gracious lord presently he shall swear.
+
+DUKE VINCENTIO:
+So farewell, or I will
+2017-12-29 23:46:22,112 - __main__ - INFO - Temperature: 0.01, Generated text: 
+very the will and the will and the will and the will and the will and the will and the will and the 
+2017-12-29 23:46:26,667 - __main__ - INFO - Temperature: 0.2, Generated text: 
+way a great a give a peach a great the will his backer
+And grace the will a for the wither the will 
+2017-12-29 23:46:31,229 - __main__ - INFO - Temperature: 0.4, Generated text: 
+be disprace
+That is the done and the with my lord, I say her be swear the will and and the pount in 
+2017-12-29 23:46:35,763 - __main__ - INFO - Temperature: 0.6, Generated text: 
+the day this a grof conest
+And be who a dinglaje me your trongh, a heart,
+And were the pire in the c
+2017-12-29 23:46:40,281 - __main__ - INFO - Temperature: 0.8, Generated text: 
+oncenters the sulted the fillon the server a morrive aicherter.
+
+TROONEAN:
+Ay, querny, that gantle t
+2017-12-29 23:46:44,825 - __main__ - INFO - Temperature: 1.0, Generated text: 
+o thit grokn
+The way makerewans hanleshipes a hers Misilky welled
+bing tonk this true themhersed gri
+2017-12-29 23:46:49,378 - __main__ - INFO - Temperature: 1.2, Generated text: 
+wh then The dae'fork,
+Putserboom, pead gish treesaven
+Till obed thou lagiout in me to
+Ancont, I vave
+2017-12-29 23:46:49,379 - __main__ - INFO - ----------Iteration 4 out of 200----------
+2017-12-29 23:49:11,425 - __main__ - INFO - Loss: 1.6562 Acc: 0.4993 Val Loss: 1.722 Val Acc: 0.4859
+2017-12-29 23:49:11,505 - __main__ - INFO - Seed: 
+Are you
+hope to use? Prithee, let him go, Brutus. So much it is;
+count
+2017-12-29 23:49:11,506 - __main__ - INFO - Target: 
+ was of day, and I must raise a layful peace.
+
+CORIOLANUS:
+Let us would see our ripe.
+
+MARK ANTONY:
+
+2017-12-29 23:49:16,086 - __main__ - INFO - Temperature: 0.01, Generated text: 
+er the stand and so man as the stand,
+That I should be so man be so man as the portion,
+The should b
+2017-12-29 23:49:20,626 - __main__ - INFO - Temperature: 0.2, Generated text: 
+e so man as the stand of the portion.
+
+ANNELIN:
+What have not the sone and single some and sport, th
+2017-12-29 23:49:25,229 - __main__ - INFO - Temperature: 0.4, Generated text: 
+e worlds and speak
+Than the mother what as some offer to be not be such done my lord;
+And my mares o
+2017-12-29 23:49:29,725 - __main__ - INFO - Temperature: 0.6, Generated text: 
+f with my mother to man,
+The cannot should dourther bo.n
+As my troughting of the hongers hass not by
+2017-12-29 23:49:34,248 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ any
+pourouses thus to falr and saired than than sine to be
+Porselineds of the now fart to taukself 
+2017-12-29 23:49:38,779 - __main__ - INFO - Temperature: 1.0, Generated text: 
+in;
+ITrands as my fother retome to chay.
+
+QUEEN MARGARETH:
+Him. whe' thou should reboses, than's the
+2017-12-29 23:49:43,359 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ knopention;
+Tome lords him mane cPlow, pore, I would sone
+she own forsereance, of, hush aghs were p
+2017-12-29 23:49:43,361 - __main__ - INFO - ----------Iteration 5 out of 200----------
+2017-12-29 23:52:04,152 - __main__ - INFO - Loss: 1.5193 Acc: 0.5359 Val Loss: 1.6843 Val Acc: 0.5033
+2017-12-29 23:52:04,235 - __main__ - INFO - Seed: 
+re she.
+it was not easest as we'll trust with him and tread upon thee?
+2017-12-29 23:52:04,236 - __main__ - INFO - Target: 
+
+I was a out my heart: shall I venture my heat,
+So vile with lock'd a brother Helen's sister?
+But on
+2017-12-29 23:52:08,643 - __main__ - INFO - Temperature: 0.01, Generated text: 
+
+
+Second Lord:
+Here that thou art the see the stard and the stard and the stard
+That thou art the se
+2017-12-29 23:52:13,052 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ated that the starge that thou art the stard with the wife and the stard
+That thou not thou shall be
+2017-12-29 23:52:17,460 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ so most be wound be she see the prace again,
+That a see the starns and out of the part of the man a
+2017-12-29 23:52:21,890 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ crain she have break to my port with him,
+They will will not to make the tring that in our our sack
+2017-12-29 23:52:26,338 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ to me
+His offecb lord do and all thine traughter and sill be it, come a wwile
+To'st the live an our
+2017-12-29 23:52:30,776 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ Rhary, and at man well you that thou made in this moint penfalp'd a king,
+Nores subfeth in sham a s
+2017-12-29 23:52:35,258 - __main__ - INFO - Temperature: 1.2, Generated text: 
+pe to did.
+
+CREISIO:
+Yor! 
+ENaN EA:
+Nes: his roy'd himpered my Reed, to make: but let no point, you,
+2017-12-29 23:52:35,260 - __main__ - INFO - ----------Iteration 6 out of 200----------
+2017-12-29 23:54:56,947 - __main__ - INFO - Loss: 1.4 Acc: 0.5679 Val Loss: 1.6561 Val Acc: 0.5076
+2017-12-29 23:54:57,027 - __main__ - INFO - Seed: 
+he either before we would be done,
+From me terror and watery shows; an
+2017-12-29 23:54:57,028 - __main__ - INFO - Target: 
+d be so graciously
+The power for it is the villain.
+
+RODERIGO:
+O Andronicus, I know you place the ti
+2017-12-29 23:55:01,452 - __main__ - INFO - Temperature: 0.01, Generated text: 
+d the seath of my sweetly bear.
+
+CASSIUS:
+I would not so say the strength of my sweet of my sweetly 
+2017-12-29 23:55:05,919 - __main__ - INFO - Temperature: 0.2, Generated text: 
+bear.
+
+CASSIUS:
+I would not be so say the strength of my sweet a day
+As many bear my sweet be partio
+2017-12-29 23:55:10,350 - __main__ - INFO - Temperature: 0.4, Generated text: 
+us with the country
+That is to be sometimes to the partion
+Hath would have be so man and so man shal
+2017-12-29 23:55:14,775 - __main__ - INFO - Temperature: 0.6, Generated text: 
+l procepent of my courter
+Makes with it out of my may when the deperent.
+
+PENRUCHIO:
+I say the same 
+2017-12-29 23:55:19,245 - __main__ - INFO - Temperature: 0.8, Generated text: 
+lament'd for mys and Aspalled be
+Some master of hissethers, and then.
+
+CAIRUS:
+That will call'd it w
+2017-12-29 23:55:23,683 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ith himbor's revengly,
+Or, for such him every blessing
+With ensemblice of our bidsite words upon it,
+2017-12-29 23:55:28,109 - __main__ - INFO - Temperature: 1.2, Generated text: 
+
+Porteds lovedsy case upout greatessy of well-nimmed
+But 'tly purposet to sint s if hast.
+
+CASSIUS:
+
+2017-12-29 23:55:28,111 - __main__ - INFO - ----------Iteration 7 out of 200----------
+2017-12-29 23:57:50,502 - __main__ - INFO - Loss: 1.2835 Acc: 0.599 Val Loss: 1.6731 Val Acc: 0.5192
+2017-12-29 23:57:50,588 - __main__ - INFO - Seed: 
+ of wax
+Should to distribute thee, ravish by wounds and sulms:
+But giv
+2017-12-29 23:57:50,590 - __main__ - INFO - Target: 
+e his light in with contempture she.
+it was not easest as we'll trust with him and tread upon thee?
+
+2017-12-29 23:57:55,401 - __main__ - INFO - Temperature: 0.01, Generated text: 
+e his son the stors and sold and down the world.
+
+CASSIUS:
+A power, sir, sir, the world was so much 
+2017-12-29 23:58:00,149 - __main__ - INFO - Temperature: 0.2, Generated text: 
+bear the world,
+And be the consent of the powers of the country's sould
+To see the horse that the ar
+2017-12-29 23:58:05,345 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ms from the and
+mer for the goodly reasons, the world,
+And be so loss and present of the conspired t
+2017-12-29 23:58:10,158 - __main__ - INFO - Temperature: 0.6, Generated text: 
+he other break to be
+Honour from my plocised by good world boy by other used
+And see the stall and p
+2017-12-29 23:58:14,781 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ower of the song: with it
+To the to her own of my body kind.
+
+A
+TOLIO:
+Come, my lord, in byfeed, I h
+2017-12-29 23:58:19,487 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ear the and
+More, from the pardon would I peinles trapolamine to spephiu,
+Till entertai monessing of
+2017-12-29 23:58:24,122 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ hel death, That I see, you coat consent,
+Glessed from the Mody, well ill:
+'Tis these as the buisly 
+2017-12-29 23:58:24,124 - __main__ - INFO - ----------Iteration 8 out of 200----------
+2017-12-30 00:00:59,098 - __main__ - INFO - Loss: 1.1588 Acc: 0.6347 Val Loss: 1.723 Val Acc: 0.5086
+2017-12-30 00:00:59,191 - __main__ - INFO - Seed: 
+xecute thy which entertainment to this even.
+
+LADY MACBETH:
+Thou shoul
+2017-12-30 00:00:59,193 - __main__ - INFO - Target: 
+dst be gallantly, I see, bid him
+Alone betimes his counsel then might come to thee.
+
+TROILUS:
+If it 
+2017-12-30 00:01:04,071 - __main__ - INFO - Temperature: 0.01, Generated text: 
+dst a true merty and the slakes of the cause,
+That I was so say the stations from the chainst
+And be
+2017-12-30 00:01:09,025 - __main__ - INFO - Temperature: 0.2, Generated text: 
+gue the streets of the chainst them them than the shall be such
+As make a friends in the chance of t
+2017-12-30 00:01:13,926 - __main__ - INFO - Temperature: 0.4, Generated text: 
+he army of the cabe
+To go him to the place of the charm of the call
+And let him sir, I will not spea
+2017-12-30 00:01:18,831 - __main__ - INFO - Temperature: 0.6, Generated text: 
+k it,
+To be so much in the army of the soldier and best it.
+
+Third Murderer:
+There's pray be with sp
+2017-12-30 00:01:23,717 - __main__ - INFO - Temperature: 0.8, Generated text: 
+irit but entreatained.
+The most is diens and streams, and book if he begin!
+And blumse their patch t
+2017-12-30 00:01:28,622 - __main__ - INFO - Temperature: 1.0, Generated text: 
+o presayur, and your singles.
+
+LOVELLS:
+I might, that I am the arms are thy blues' out of it.
+They s
+2017-12-30 00:01:33,554 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ayihiom, and, clock in our inleanarles.
+Yours teath, pitty, are thy handress
+kntis it in drat the ot
+2017-12-30 00:01:33,557 - __main__ - INFO - ----------Iteration 9 out of 200----------
+2017-12-30 00:04:04,838 - __main__ - INFO - Loss: 1.0381 Acc: 0.6705 Val Loss: 1.7725 Val Acc: 0.5115
+2017-12-30 00:04:04,923 - __main__ - INFO - Seed: 
+ play hang back.
+
+EDGAR:
+Sound absence, lichard part!
+
+Nurse:
+Ay, if y
+2017-12-30 00:04:04,925 - __main__ - INFO - Target: 
+ou do remain; and so you do.
+
+CINNA:
+I do not wish yourself, my lord; I knew the will:
+My friend is 
+2017-12-30 00:04:09,402 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ou do abserve thee are the subjects
+As he hath not thee are the strone this say thee are so swear
+An
+2017-12-30 00:04:13,880 - __main__ - INFO - Temperature: 0.2, Generated text: 
+d straight the strength and so swears a woman
+Than the court shall be so friends are so sweat like a
+2017-12-30 00:04:18,354 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ myst thought,
+And in the service and the duppers to thy sword by performance
+To make thee alone tha
+2017-12-30 00:04:23,085 - __main__ - INFO - Temperature: 0.6, Generated text: 
+t you are more than the prease to-make thee are consint of your breakings to the pusiness
+With me, a
+2017-12-30 00:04:27,689 - __main__ - INFO - Temperature: 0.8, Generated text: 
+nd with un a sister for the further fall,
+And in thy streets in heaven with youthing the issal.
+Beho
+2017-12-30 00:04:32,621 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ld his come.
+
+CERIA:
+Till her three men, gid a good thy fearners, and who comes?
+
+BEPTRAIIA:
+Now she
+2017-12-30 00:04:37,139 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ will In rest;
+And best falbone cat maly upon our goodness.
+
+RowAn:
+But yet here if not follow, and 
+2017-12-30 00:04:37,140 - __main__ - INFO - ----------Iteration 10 out of 200----------
+2017-12-30 00:07:01,364 - __main__ - INFO - Loss: 0.913 Acc: 0.708 Val Loss: 1.8636 Val Acc: 0.5011
+2017-12-30 00:07:01,455 - __main__ - INFO - Seed: 
+cherous edges of thy point!
+This stone of wines.
+
+OSWALD:
+More than th
+2017-12-30 00:07:01,455 - __main__ - INFO - Target: 
+ese woes are not with true stars? Come, some loath.
+
+BELARIUS:
+Ay, ay; and set upon our mortaly worl
+2017-12-30 00:07:06,061 - __main__ - INFO - Temperature: 0.01, Generated text: 
+e prince were a wall; and then that he that stand and so much ground to the tame.
+
+CASSIUS:
+Fair woe
+2017-12-30 00:07:10,645 - __main__ - INFO - Temperature: 0.2, Generated text: 
+s, I will not speak it, and they shall be proud to thee.
+
+GLOUCESTER:
+Then think it is the sea the a
+2017-12-30 00:07:15,140 - __main__ - INFO - Temperature: 0.4, Generated text: 
+rms to this appear
+So warring give a day to make his choice;
+When you have been a man with their own
+2017-12-30 00:07:19,635 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ provided
+
+DUKE OF YORK:
+
+CAESIUS:
+A part, a traith, rather than this my master, man, and then the w
+2017-12-30 00:07:24,140 - __main__ - INFO - Temperature: 0.8, Generated text: 
+orld,
+And would not recreet thine own fither; with my good lady! 
+Second Servingman:
+When I would su
+2017-12-30 00:07:28,639 - __main__ - INFO - Temperature: 1.0, Generated text: 
+e rur in my mounhand all he's twand, my heart,
+As she true as our soon lives perform'd mechance.
+
+CA
+2017-12-30 00:07:33,166 - __main__ - INFO - Temperature: 1.2, Generated text: 
+MILA:
+This, which a tage, to England majesty.
+
+CHAUMIO:
+He is not thine orrershanoand, my voocime, a
+2017-12-30 00:07:33,168 - __main__ - INFO - ----------Iteration 11 out of 200----------
+2017-12-30 00:09:55,975 - __main__ - INFO - Loss: 0.8004 Acc: 0.7449 Val Loss: 1.9226 Val Acc: 0.5028
+2017-12-30 00:09:56,058 - __main__ - INFO - Seed: 
+ fair court:
+And profession was I Eilded than my part;
+He, as I believ
+2017-12-30 00:09:56,060 - __main__ - INFO - Target: 
+e your tailor in the elder-kin
+Sets as you have valianted. Now, with honour, as
+I train the narrow t
+2017-12-30 00:10:00,587 - __main__ - INFO - Temperature: 0.01, Generated text: 
+e your tainous life; and then the day
+Must stay and the world and so much my lord,
+And whethere I sh
+2017-12-30 00:10:05,136 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ould have my waycer.
+
+DUKE VINCENTIO:
+Ha! have I should be strength him which now to speak,
+And so m
+2017-12-30 00:10:09,694 - __main__ - INFO - Temperature: 0.4, Generated text: 
+uch my gentle man as the day.
+
+MARK ANTONY:
+I mest thee, sir, she would have her cumper
+Then will be
+2017-12-30 00:10:14,247 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ar thy daughter and the world, or such onessy
+Should say him with you; and show the court,
+And in th
+2017-12-30 00:10:18,780 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ine eyes that the name of Woldier's letter goodly cause inseems, she
+the chring, his son, and is my 
+2017-12-30 00:10:23,314 - __main__ - INFO - Temperature: 1.0, Generated text: 
+love him.
+If we show thou breaked me now.
+
+APHALLOT:
+Remeed, sir, bechold you do come to be so and d
+2017-12-30 00:10:27,861 - __main__ - INFO - Temperature: 1.2, Generated text: 
+aight hen,, you wouldst proud;
+So flesh doth delise in a witch in that.
+
+VANNO:
+O, sir, my hear.
+
+Pl
+2017-12-30 00:10:27,863 - __main__ - INFO - ----------Iteration 12 out of 200----------
+2017-12-30 00:12:52,260 - __main__ - INFO - Loss: 0.695 Acc: 0.7792 Val Loss: 2.0284 Val Acc: 0.4956
+2017-12-30 00:12:52,339 - __main__ - INFO - Seed: 
+elder suit of paragon.
+
+First Servingman:
+By the fire, sir, he was dou
+2017-12-30 00:12:52,340 - __main__ - INFO - Target: 
+bled,--
+
+PUCK:
+But, for the time fair, you must have me excused:
+Both the lover of his blood committ
+2017-12-30 00:12:56,951 - __main__ - INFO - Temperature: 0.01, Generated text: 
+blet me well.
+
+FOLDEN:
+But, I will make the fall of our fortune from the gallant cousin than his:
+My
+2017-12-30 00:13:01,517 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ mouth is mock'd my father; on the fall of your fortunes.
+
+BASSIUS:
+Where is the loves me that I wou
+2017-12-30 00:13:06,119 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ld be your daughter gone,
+To make the flow in the fire their faction.
+
+BASSANIO:
+He knows the looks 
+2017-12-30 00:13:10,662 - __main__ - INFO - Temperature: 0.6, Generated text: 
+of all the will gentleman:
+When the blood of these thing of brother;
+And that it were all the army t
+2017-12-30 00:13:15,237 - __main__ - INFO - Temperature: 0.8, Generated text: 
+hough there is solemnity
+And not our subless in lives on the foult of Peroment of a bosom
+Should so 
+2017-12-30 00:13:19,815 - __main__ - INFO - Temperature: 1.0, Generated text: 
+slife to Lune that solemnity; which man shoul:
+Of wonder to the motion fortune to accuse me throw
+ E
+2017-12-30 00:13:24,365 - __main__ - INFO - Temperature: 1.2, Generated text: 
+Nse: honour with him.
+Nour deeds. Ro, rawas hangly in the curner cut contract of Citious
+Hath so cha
+2017-12-30 00:13:24,365 - __main__ - INFO - ----------Iteration 13 out of 200----------
+2017-12-30 00:15:49,405 - __main__ - INFO - Loss: 0.6037 Acc: 0.8088 Val Loss: 2.1294 Val Acc: 0.4998
+2017-12-30 00:15:49,497 - __main__ - INFO - Seed: 
+its of your rudesty.
+
+CRESSIDA:
+Till I am no return; and I will practi
+2017-12-30 00:15:49,500 - __main__ - INFO - Target: 
+se at my grace in single shore;
+And his ambitious air he knows all one.
+I had not speak'd lord, if b
+2017-12-30 00:15:54,150 - __main__ - INFO - Temperature: 0.01, Generated text: 
+se at my sword in great men, and mountain the day
+Must stay and be so graciously well with the world
+2017-12-30 00:15:58,829 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ before your said the world before
+In true and our heads and no more than her darest and great show 
+2017-12-30 00:16:03,579 - __main__ - INFO - Temperature: 0.4, Generated text: 
+and gone,
+To stray the sing of pisain the wither's short;
+And this with the head of this head.
+
+DUCH
+2017-12-30 00:16:08,182 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ESS OF YORK:
+
+DUKE ORSINO:
+Corrupt a tron! they would dream so say,
+And with the world beauty of jea
+2017-12-30 00:16:12,791 - __main__ - INFO - Temperature: 0.8, Generated text: 
+lousy
+Was not your sair of the passion for my heart:
+Here case her open of the enery to sleep and co
+2017-12-30 00:16:17,780 - __main__ - INFO - Temperature: 1.0, Generated text: 
+urt: when
+Dhee her ear is any thing nor your wordhing
+their men of my officer all I come.
+Let me bea
+2017-12-30 00:16:22,516 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ch as your ear shieth gone
+I have been scorn it soft of the haap
+Go male as weUpty but course someth
+2017-12-30 00:16:22,518 - __main__ - INFO - ----------Iteration 14 out of 200----------
+2017-12-30 00:18:46,213 - __main__ - INFO - Loss: 0.5328 Acc: 0.8293 Val Loss: 2.2312 Val Acc: 0.4847
+2017-12-30 00:18:46,295 - __main__ - INFO - Seed: 
+ou place the time.
+
+QUEEN MARGARET:
+How fares the day with me? it not 
+2017-12-30 00:18:46,297 - __main__ - INFO - Target: 
+on a woman
+Shall be to give his pains to be so friends all;
+Some other hielding, tetles 'twixt him i
+2017-12-30 00:18:50,795 - __main__ - INFO - Temperature: 0.01, Generated text: 
+on a woman
+To hold a word on souls. I had absent to chide,
+Upon your love, sir, as well stoped all t
+2017-12-30 00:18:55,250 - __main__ - INFO - Temperature: 0.2, Generated text: 
+he widow,
+To see your reason, and what thou well face,
+And make him swear like a fool, to make her g
+2017-12-30 00:18:59,735 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ive
+The halls and men down with him,
+There's all my father.
+
+PANDARUS:
+I would thou for a sign
+Shoul
+2017-12-30 00:19:04,250 - __main__ - INFO - Temperature: 0.6, Generated text: 
+d I show the show in offence.
+
+JEISA:
+I am not what, they are a's so may again,
+To gold.
+But, thou!'
+2017-12-30 00:19:08,733 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ for you are too dangerously?
+The widon with his torch, he hath talk ob undour
+hall not sigh the wil
+2017-12-30 00:19:13,180 - __main__ - INFO - Temperature: 1.0, Generated text: 
+l before we stull own for old with being a sitsel
+As writ, whose addous forlial :
+on emet, my trofar
+2017-12-30 00:19:17,662 - __main__ - INFO - Temperature: 1.2, Generated text: 
+s. Their staces.
+
+OMinct:
+A pot there spirct to thee! thou flesh;
+Nir honourable natures yet, my fle
+2017-12-30 00:19:17,663 - __main__ - INFO - ----------Iteration 15 out of 200----------
+2017-12-30 00:21:37,879 - __main__ - INFO - Loss: 0.4735 Acc: 0.8486 Val Loss: 2.3265 Val Acc: 0.4893
+2017-12-30 00:21:37,961 - __main__ - INFO - Seed: 
+ a brook-gast that thyself will eat an excellent time.
+
+MALVOLIO:
+Say,
+2017-12-30 00:21:37,963 - __main__ - INFO - Target: 
+ good Sir John, when I was fair again,--
+
+EMILIA:
+But here is dead.
+
+MALVOLIO:
+Now she was still e'e
+2017-12-30 00:21:42,504 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ good Sir John, when I was said as I have all the way.
+
+SICINIUS:
+O, so. Say you well, indeed,
+Be no
+2017-12-30 00:21:47,051 - __main__ - INFO - Temperature: 0.2, Generated text: 
+t take it not come in heaven, Lord Bassand
+As many ambassadors will eat lived a dream,
+As they have 
+2017-12-30 00:21:51,592 - __main__ - INFO - Temperature: 0.4, Generated text: 
+here, or cur and late from many
+Ampire of her icfortune up,
+That all the present well before I fear;
+2017-12-30 00:21:56,139 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ you shall follow hell;
+For the grace which I am. Caius, seem the fall of stoke,
+It should be concem
+2017-12-30 00:22:00,986 - __main__ - INFO - Temperature: 0.8, Generated text: 
+n'd, thou art wife every bring on.
+
+ANTIPHALUS:
+Nor a thousand harp a secw of my lawd, the blessing 
+2017-12-30 00:22:05,634 - __main__ - INFO - Temperature: 1.0, Generated text: 
+of
+Den them appearance and thee in the conspech
+Which now abe these strain sits
+Make a perfair indee
+2017-12-30 00:22:10,153 - __main__ - INFO - Temperature: 1.2, Generated text: 
+d by regutain, and they have in slettance
+Hath Pald and twat's ife's look, and fembland with Brutus,
+2017-12-30 00:22:10,155 - __main__ - INFO - ----------Iteration 16 out of 200----------
