@@ -4,7 +4,7 @@ iterations_train = 200
 generated_chars = 100
 generated_chars_book = 1000
 learning_rate = 0.001  # Higher lr does not mean it's faster!!
-batch_size = 1024
+batch_size = 256
 chunk_size = 100000
 epochs = 2
 _use_gpu = True
@@ -156,11 +156,11 @@ Y = Y[s]
 #region Model
 # define the LSTM model
 model = Sequential()
-model.add(LSTM(256, input_shape=(seq_length, len(chars)), return_sequences=True))
-#model.add(Dropout(0.1))
-model.add(LSTM(256, return_sequences=True))
-#model.add(Dropout(0.0))
-model.add(LSTM(256))
+model.add(LSTM(1024, input_shape=(seq_length, len(chars)), return_sequences=True))
+model.add(Dropout(0.2))
+model.add(LSTM(512, return_sequences=True))
+model.add(Dropout(0.2))
+model.add(LSTM(1024))
 #model.add(Dropout(0.0))
 model.add(Dense(len(chars)))
 model.add(Activation('softmax'))# Try with TimeDistributed

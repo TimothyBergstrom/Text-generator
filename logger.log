@@ -9203,3 +9203,3061 @@ Howerful we can. He rode in the hilt, Eragons heart only barely build, a tunnel 
 2018-10-08 19:56:29,088 - __main__ - INFO - Temperature: 1.2, Generated text: 
 ething turned arrowfuch, including within; Rhunn-estried Eragon. Glaedr, allowing the room where I f
 2018-10-08 19:56:35,869 - __main__ - INFO - ----------Iteration 87 out of 200----------
+2018-10-11 12:02:55,907 - __main__ - INFO - --------------------START OF RUN--------------------
+2018-10-11 12:02:55,907 - __main__ - INFO - Loading modules
+2018-10-11 12:03:25,016 - __main__ - INFO - {'\n': 0, ' ': 1, '!': 2, '"': 3, '%': 4, '&': 5, "'": 6, '(': 7, ')': 8, '*': 9, ',': 10, '-': 11, '.': 12, '/': 13, '0': 14, '1': 15, '2': 16, '3': 17, '4': 18, '5': 19, '6': 20, '7': 21, '8': 22, '9': 23, ':': 24, ';': 25, '>': 26, '?': 27, 'A': 28, 'B': 29, 'C': 30, 'D': 31, 'E': 32, 'F': 33, 'G': 34, 'H': 35, 'I': 36, 'J': 37, 'K': 38, 'L': 39, 'M': 40, 'N': 41, 'O': 42, 'P': 43, 'Q': 44, 'R': 45, 'S': 46, 'T': 47, 'U': 48, 'V': 49, 'W': 50, 'X': 51, 'Y': 52, 'Z': 53, '\\': 54, ']': 55, 'a': 56, 'b': 57, 'c': 58, 'd': 59, 'e': 60, 'f': 61, 'g': 62, 'h': 63, 'i': 64, 'j': 65, 'k': 66, 'l': 67, 'm': 68, 'n': 69, 'o': 70, 'p': 71, 'q': 72, 'r': 73, 's': 74, 't': 75, 'u': 76, 'v': 77, 'w': 78, 'x': 79, 'y': 80, 'z': 81, '|': 82, '~': 83, '—': 84, '‘': 85, '’': 86, '“': 87, '”': 88, '•': 89, '■': 90, '□': 91}
+2018-10-11 12:03:28,833 - __main__ - INFO - It took 3.81 seconds to load 6765149 patterns
+2018-10-11 12:03:28,833 - __main__ - INFO - Total Characters: 6765174
+2018-10-11 12:03:28,833 - __main__ - INFO - Total Vocab: 92
+2018-10-11 12:03:28,984 - __main__ - INFO - Total Words: 1168853
+2018-10-11 12:03:29,230 - __main__ - INFO - Total Unique Words: 60966
+2018-10-11 12:03:29,230 - __main__ - INFO - Total Patterns: 6765149
+2018-10-11 12:03:34,579 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,580 - __main__ - INFO - Layer (type)                 Output Shape              Param #   
+2018-10-11 12:03:34,581 - __main__ - INFO - =================================================================
+2018-10-11 12:03:34,581 - __main__ - INFO - lstm_1 (LSTM)                (None, 25, 1024)          4575232   
+2018-10-11 12:03:34,582 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,583 - __main__ - INFO - dropout_1 (Dropout)          (None, 25, 1024)          0         
+2018-10-11 12:03:34,583 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,583 - __main__ - INFO - lstm_2 (LSTM)                (None, 25, 512)           3147776   
+2018-10-11 12:03:34,584 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,584 - __main__ - INFO - dropout_2 (Dropout)          (None, 25, 512)           0         
+2018-10-11 12:03:34,584 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,585 - __main__ - INFO - lstm_3 (LSTM)                (None, 1024)              6295552   
+2018-10-11 12:03:34,585 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,586 - __main__ - INFO - dense_1 (Dense)              (None, 92)                94300     
+2018-10-11 12:03:34,586 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,586 - __main__ - INFO - activation_1 (Activation)    (None, 92)                0         
+2018-10-11 12:03:34,587 - __main__ - INFO - =================================================================
+2018-10-11 12:03:34,587 - __main__ - INFO - Total params: 14,112,860
+2018-10-11 12:03:34,587 - __main__ - INFO - Trainable params: 14,112,860
+2018-10-11 12:03:34,588 - __main__ - INFO - Non-trainable params: 0
+2018-10-11 12:03:34,588 - __main__ - INFO - _________________________________________________________________
+2018-10-11 12:03:34,588 - __main__ - INFO - None
+2018-10-11 12:03:40,240 - __main__ - INFO - ----------Iteration 1 out of 200----------
+2018-10-11 12:08:43,549 - __main__ - INFO - Loss: 2.8071 Acc: 0.2405 Val Loss: 2.6545 Val Acc: 0.2794
+2018-10-11 12:08:43,683 - __main__ - INFO - Seed: 
+ attempted to continue it
+2018-10-11 12:08:43,684 - __main__ - INFO - Target: 
+s eager licking of 
+his robes. 
+
+He found there was a way of lodging his knees behind 
+the wing join
+2018-10-11 12:08:46,661 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ the ther tis tis tird tis ther tis tis tird tis tird tis tird tis ther tis tis tird tis tis tird ti
+2018-10-11 12:08:49,342 - __main__ - INFO - Temperature: 0.2, Generated text: 
+se the theres ther the tis tas the tird 
+
+““
+
+
+
+““
+
+
+
+“
+
+
+“““
+
+
+“
+““
+
+
+
+“
+
+
+“
+“
+
+
+
+
+
+
+
+
+“
+
+
+““
+
+
+““
+
+2018-10-11 12:08:52,007 - __main__ - INFO - Temperature: 0.4, Generated text: 
+““Tase his hirk the tit tise 
+therd 
+
+“
+
+““““
+“
+“Wonds aw the ne tosert timr tas seseis him werr and
+2018-10-11 12:08:54,676 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ bit a Woit wicren on wheren numreiwid Teekirg sherend 
+ther kad they ansuoped thert 
+lanren o geise
+2018-10-11 12:08:57,403 - __main__ - INFO - Temperature: 0.8, Generated text: 
+l cfav twer nold hret rorrs tiwededey wusrld, 
+poweoyogcrew tar hacdry hrd on sret m tay Indht” a 
+“
+2018-10-11 12:09:00,089 - __main__ - INFO - Temperature: 1.0, Generated text: 
+““TiHe. ublyob Dblek. Hallld oD ot teokllediTet ohebd trot.idglnm caf apdeyyedeoseses. khmtf’.. tink
+2018-10-11 12:09:02,771 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ osrtaj bwir satytoth 
+phanv sh yyrohny sh dabdsseocdcdy’ck ros’wey so wel1l Vyef,. yiom Ravd mf anl
+2018-10-11 12:09:07,978 - __main__ - INFO - ----------Iteration 2 out of 200----------
+2018-10-11 12:14:00,492 - __main__ - INFO - Loss: 2.2697 Acc: 0.3713 Val Loss: 2.1965 Val Acc: 0.3792
+2018-10-11 12:14:00,586 - __main__ - INFO - Seed: 
+ 
+way back up to the door
+2018-10-11 12:14:00,588 - __main__ - INFO - Target: 
+. 
+
+“What d’you reckon that arch was?” Harry asked 
+Hermione as they regained the dark circular room
+2018-10-11 12:14:03,315 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ 
+
+
+
+
+Page | 10 Harry Potter and the Pand 
+the stine a J.K. Rowling 
+
+
+
+
+
+Page | 10 Harry Potter and
+2018-10-11 12:14:06,019 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ the Pand the 
+was sour the 
+srine the 
+wand the trand 
+
+
+
+Page | 10 Harry Poun the Pand the 
+was an
+2018-10-11 12:14:08,701 - __main__ - INFO - Temperature: 0.4, Generated text: 
+d hi the Pond and the 
+hind 
+the sond the cat sond to 
+soud the bat the band an the 
+wring to 
+the w
+2018-10-11 12:14:11,373 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ale loa hin 
+at sour the bat ha saun the 
+the dot to 
+soln bat on the has on 
+bat ward the Polk tond
+2018-10-11 12:14:14,042 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ budd to 
+se pard and caire wo the grinl ar 
+wheun ba foar Harr soad the thay 
+hhat a 
+thame a trey 
+2018-10-11 12:14:16,747 - __main__ - INFO - Temperature: 1.0, Generated text: 
+Ar thes? Harry. As Harry soiff-ke to Hemr hand Dimkr’t af mis ans baad cad then wa ather ranrn 
+’ter
+2018-10-11 12:14:19,423 - __main__ - INFO - Temperature: 1.2, Generated text: 
+iuring thene, on 
+ shelOy tuisg “es.” waid Rou sosd Harry Roune 
+Hlmafarids hofe 
+belaunst 
+shane,” 
+2018-10-11 12:14:24,388 - __main__ - INFO - ----------Iteration 3 out of 200----------
+2018-10-11 12:19:16,975 - __main__ - INFO - Loss: 1.7945 Acc: 0.4833 Val Loss: 1.739 Val Acc: 0.4927
+2018-10-11 12:19:17,076 - __main__ - INFO - Seed: 
+what to do. When nobody d
+2018-10-11 12:19:17,077 - __main__ - INFO - Target: 
+id, he said, “Very well — 
+Dawlish! Williamson! Go down to the Department of 
+Mysteries and see ... 
+2018-10-11 12:19:19,775 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ou the 
+was the fare the Quither and the 
+start and the fare the Quitch of the 
+start and the fare t
+2018-10-11 12:19:22,447 - __main__ - INFO - Temperature: 0.2, Generated text: 
+he Quitch could and the 
+start and the fare to be a feap of the 
+was the fare the fare the tall 
+sto
+2018-10-11 12:19:25,165 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ut to feet of a fat to be and of the fart of the 
+shall what was start and the sag of the 
+wast of t
+2018-10-11 12:19:27,827 - __main__ - INFO - Temperature: 0.6, Generated text: 
+he grooms wather and the fillled and what was 
+what Harry could to be a whist at the bat whas she 
+h
+2018-10-11 12:19:30,505 - __main__ - INFO - Temperature: 0.8, Generated text: 
+aver, I seall agay Potting himn’t has it Harry. 
+
+“But raze the vas coulen’t look beep of i mround a
+2018-10-11 12:19:33,177 - __main__ - INFO - Temperature: 1.0, Generated text: 
+r at lave is aad taked whit Pade 
+has forsearlifihey shen Feifrisise frag samem doid’t they was 
+Har
+2018-10-11 12:19:35,894 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ly Hasrim vad. Mackle, Ron’t 
+briishaged? It owl tou, wo lovor at gheral ow, Mrhiotht it of kruwa,” 
+2018-10-11 12:19:40,913 - __main__ - INFO - ----------Iteration 4 out of 200----------
+2018-10-11 12:24:33,431 - __main__ - INFO - Loss: 1.5454 Acc: 0.5465 Val Loss: 1.6062 Val Acc: 0.5346
+2018-10-11 12:24:33,528 - __main__ - INFO - Seed: 
+ dead!” spat 
+Voldemort. 
+2018-10-11 12:24:33,530 - __main__ - INFO - Target: 
+He sent another Killing Curse at 
+Dumbledore but missed, instead hitting the security 
+guards desk, 
+2018-10-11 12:24:36,231 - __main__ - INFO - Temperature: 0.01, Generated text: 
+“It was a stark of 
+the cloak of the cloak of the 
+cloak of the corridor to the 
+cloak of the cloak 
+2018-10-11 12:24:38,939 - __main__ - INFO - Temperature: 0.2, Generated text: 
+of the 
+cloak of the 
+class. 
+
+“I don’t want to ter the fortratch 
+and starks and the corridor 
+come
+2018-10-11 12:24:41,656 - __main__ - INFO - Temperature: 0.4, Generated text: 
+rt. Harry stading a out of the 
+cloass to the mark of the 
+floor was studying for the 
+cloak and sta
+2018-10-11 12:24:44,363 - __main__ - INFO - Temperature: 0.6, Generated text: 
+nding 
+the corriding the school was a 
+carrow of a stady were ton on the stuir Flamel was myes he wa
+2018-10-11 12:24:47,078 - __main__ - INFO - Temperature: 0.8, Generated text: 
+s starped 
+dor not back alout — neville?” 
+
+“Wly was slytherin’,” said Ron. 
+
+“You endiseding anm in
+2018-10-11 12:24:49,762 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ at, she and buise alout 
+sme too some to dee. Their 
+narv round buantu — a stade, hy’s pare away of
+2018-10-11 12:24:52,430 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ uirrloin on he toins 
+see Hermione were. 
+
+They’rs tonbse.” 
+
+“Yesk, Mattaa,” buiked promoth eve le
+2018-10-11 12:24:57,455 - __main__ - INFO - ----------Iteration 5 out of 200----------
+2018-10-11 12:29:49,736 - __main__ - INFO - Loss: 1.4331 Acc: 0.5815 Val Loss: 1.619 Val Acc: 0.5409
+2018-10-11 12:29:49,833 - __main__ - INFO - Seed: 
+er. 
+
+"... and there’s th
+2018-10-11 12:29:49,834 - __main__ - INFO - Target: 
+e Mudblood, standing there bold as 
+brass, oh if my Mistress knew, oh how she’d cry, and 
+there’s a 
+2018-10-11 12:29:52,572 - __main__ - INFO - Temperature: 0.01, Generated text: 
+e door and 
+the door and the door and 
+the door and the door and 
+the door and the door and 
+the doo
+2018-10-11 12:29:55,272 - __main__ - INFO - Temperature: 0.2, Generated text: 
+r and the summer of here 
+and standing and the door. 
+
+“What was the chate — ” 
+
+“We’ll go be the do
+2018-10-11 12:29:57,938 - __main__ - INFO - Temperature: 0.4, Generated text: 
+or of the door.” 
+
+“We’re toing ever was the 
+plant of the dragon. 
+
+“We’ll go be the flate and 
+the
+2018-10-11 12:30:00,604 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ real seaming and Harry was 
+mooced and her be chat he but he should 
+Harry stay and rullowed enchan
+2018-10-11 12:30:03,304 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ted the rrouth tha same.” 
+
+“No wearing the door.” 
+
+Ron brad him.” 
+
+Hagrid wis liking down the 
+gr
+2018-10-11 12:30:06,003 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ans they weave and I would out fot 
+the flase sworpicud, “’uirlell, and the moein shacing gis de wis
+2018-10-11 12:30:08,672 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ to. Nidred, Rhados anmloyen.” 
+
+Hagrid enpledored it’s atul epg. hhat swout unbadess Tro, he letse 
+2018-10-11 12:30:13,684 - __main__ - INFO - ----------Iteration 6 out of 200----------
+2018-10-11 12:35:05,857 - __main__ - INFO - Loss: 1.4056 Acc: 0.5855 Val Loss: 1.5175 Val Acc: 0.5606
+2018-10-11 12:35:05,953 - __main__ - INFO - Seed: 
+y of Mrs. 
+Weasley appeal
+2018-10-11 12:35:05,954 - __main__ - INFO - Target: 
+ing to her husband during Harry’s first 
+dinner in Grimmauld Place. 
+
+“I dunno,” said Ron, looking a
+2018-10-11 12:35:08,670 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ed the shop of the 
+starrer of Secrets - J.K. Rowling 
+
+
+
+
+“I can and they were they were 
+to the cl
+2018-10-11 12:35:11,398 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ouds of the window of the 
+dishbow that and they were 
+they had and they had street to 
+the car and 
+2018-10-11 12:35:14,075 - __main__ - INFO - Temperature: 0.4, Generated text: 
+they had a long 
+street and sent to Harry’s 
+surpring — they heart him to keep 
+the common of the ca
+2018-10-11 12:35:16,746 - __main__ - INFO - Temperature: 0.6, Generated text: 
+r of the hand 
+with a lone to hell be about Slying alout — ” 
+
+“He’ll forest they warts from they st
+2018-10-11 12:35:19,426 - __main__ - INFO - Temperature: 0.8, Generated text: 
+opped one were 
+upen and tellemed in his eyes in the shone 
+dinces in the clants, and keeple sharply
+2018-10-11 12:35:22,143 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ flik to being at them. 
+
+“Dud Nud exjr Lur and Luddes into Mrs. Weasley. “Yes pullus in 
+Muggles — 
+2018-10-11 12:35:25,071 - __main__ - INFO - Temperature: 1.2, Generated text: 
+he’s meen buck if 
+brugfhen dining Pon’t fee to do. But rree no, that phease I Hower!” Draso Mrs. We
+2018-10-11 12:35:30,435 - __main__ - INFO - ----------Iteration 7 out of 200----------
+2018-10-11 12:40:21,485 - __main__ - INFO - Loss: 1.3697 Acc: 0.5976 Val Loss: 1.4545 Val Acc: 0.5775
+2018-10-11 12:40:21,581 - __main__ - INFO - Seed: 
+rowing Pettigrew’s hands 
+2018-10-11 12:40:21,581 - __main__ - INFO - Target: 
+
+off him in disgust. “I’m not doing this for you. I’m 
+doing it because — I don’t reckon my dad woul
+2018-10-11 12:40:24,351 - __main__ - INFO - Temperature: 0.01, Generated text: 
+and 
+bell one the stands and still 
+before the stands and still 
+before the stands and still 
+before
+2018-10-11 12:40:27,015 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ the stands and still into the 
+could be and still the stands of the common 
+start and still and sti
+2018-10-11 12:40:29,698 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ll 
+down to be out of the staircast. 
+
+“I know, and that you work on the could start went to stay 
+b
+2018-10-11 12:40:32,373 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ooks and down to the front of the best the best. 
+
+“He too, the stact and two begores who was ever s
+2018-10-11 12:40:35,024 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ign into the corridor. 
+
+“Padn — ” 
+
+
+
+Page | 131 Harry Potter and the Chamber of Secrets - J.K. Row
+2018-10-11 12:40:37,692 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ling 
+
+
+
+
+It was the works. Frinnons teeting in 
+aroundable black, to Lockhart that 
+offuce, as he w
+2018-10-11 12:40:40,377 - __main__ - INFO - Temperature: 1.2, Generated text: 
+as moved a slarsd 
+pufurs ite on it, flutched hen Hagrid’s? 
+“Pake | hit he would meturf by. 
+
+Artim
+2018-10-11 12:40:45,064 - __main__ - INFO - ----------Iteration 8 out of 200----------
+2018-10-11 12:45:36,099 - __main__ - INFO - Loss: 1.2707 Acc: 0.6208 Val Loss: 1.3642 Val Acc: 0.6
+2018-10-11 12:45:36,201 - __main__ - INFO - Seed: 
+n appeared 
+on Lupin’s fa
+2018-10-11 12:45:36,201 - __main__ - INFO - Target: 
+ce. 
+
+“Well?” said Snape. 
+
+Lupin continued to stare at the map. Harry had the 
+impression that Lupi
+2018-10-11 12:45:38,908 - __main__ - INFO - Temperature: 0.01, Generated text: 
+mily and the 
+stand of the stairs of the 
+stairs of the stairs of Secrets - J.K. Rowling 
+
+
+
+
+“I wan
+2018-10-11 12:45:41,587 - __main__ - INFO - Temperature: 0.2, Generated text: 
+t to the stairs of the 
+stands of the stairs of the 
+stairs of Slytherin when he was a 
+speck of the
+2018-10-11 12:45:44,255 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ other complete 
+when the Bludger when the whole complete 
+of Slytherin was a long, which must 
+had 
+2018-10-11 12:45:46,949 - __main__ - INFO - Temperature: 0.6, Generated text: 
+just on his notes and the way they looked at the forming of Srretches, sir. 
+
+A Bell we knew the — t
+2018-10-11 12:45:49,617 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ere in the 
+deminder and said the class sirves 
+them when a shocked Harry to the end in his white 
+o
+2018-10-11 12:45:52,314 - __main__ - INFO - Temperature: 1.0, Generated text: 
+f calcowempelvess sontly has preases onto her 
+startacus and Folins proming 
+before onos when he nee
+2018-10-11 12:45:54,989 - __main__ - INFO - Temperature: 1.2, Generated text: 
+dbe, sir. And 
+anythanks Poeseot clearhed 
+
+
+
+Page | 164G Harry Potter on the Chamber of Secrets tha
+2018-10-11 12:45:59,659 - __main__ - INFO - ----------Iteration 9 out of 200----------
+2018-10-11 12:50:50,793 - __main__ - INFO - Loss: 1.217 Acc: 0.6346 Val Loss: 1.313 Val Acc: 0.612
+2018-10-11 12:50:50,895 - __main__ - INFO - Seed: 
+ar the door, and he sat 
+
+2018-10-11 12:50:50,895 - __main__ - INFO - Target: 
+down quickly next to Cedric, looking up at the velvet- 
+covered table, where four of the five judges
+2018-10-11 12:50:53,595 - __main__ - INFO - Temperature: 0.01, Generated text: 
+the castle was and said the 
+castle was and said the castle 
+of the castle to the Chamber of Secrets
+2018-10-11 12:50:56,286 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ - J.K. Rowling 
+
+
+
+
+“I know what we hear all the 
+door. 
+
+“I don’t think you know what 
+you know wh
+2018-10-11 12:50:58,951 - __main__ - INFO - Temperature: 0.4, Generated text: 
+at he was to him a large wand and started the 
+corner of Secrets - J.K. Rowling 
+
+
+
+
+“I don’t think 
+2018-10-11 12:51:01,649 - __main__ - INFO - Temperature: 0.6, Generated text: 
+he’s the peapon — 
+
+
+Page | 222 Harry Potter and the Chamber of Secrets - J.K. Rowling 
+
+
+
+
+“Hermion
+2018-10-11 12:51:04,334 - __main__ - INFO - Temperature: 0.8, Generated text: 
+e!” 
+
+“Ark anything and singled than a 
+hold-new chence and sudden Culled and 
+swood at him in the m
+2018-10-11 12:51:07,033 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ettle than to the Meuh loudle in 
+Riddle’s cire was  and live back in pare,” he said, 
+
+Professor Sc
+2018-10-11 12:51:09,692 - __main__ - INFO - Temperature: 1.2, Generated text: 
+roole sandly 
+caught jyse to well. 
+Foughtho her running Muggle 
+Wobden paints! But me. As though 
+w
+2018-10-11 12:51:14,381 - __main__ - INFO - ----------Iteration 10 out of 200----------
+2018-10-11 12:56:05,329 - __main__ - INFO - Loss: 1.1709 Acc: 0.6438 Val Loss: 1.2477 Val Acc: 0.63
+2018-10-11 12:56:05,423 - __main__ - INFO - Seed: 
+rt,” said Snape, a malici
+2018-10-11 12:56:05,423 - __main__ - INFO - Target: 
+ous 
+smile on his lips, “with boxes one thousand and 
+
+Page | 596 Harry Potter and the Half Blood Pr
+2018-10-11 12:56:08,157 - __main__ - INFO - Temperature: 0.01, Generated text: 
+laty 
+click, and then the wall 
+was standing about the car 
+and saw the car was standing about the 
+
+2018-10-11 12:56:10,839 - __main__ - INFO - Temperature: 0.2, Generated text: 
+corner. 
+
+“What’s a some of the car 
+and the car to the walls, who was 
+solid with a small and then 
+2018-10-11 12:56:13,503 - __main__ - INFO - Temperature: 0.4, Generated text: 
+were 
+blood and then the basilisk 
+was silence and then, then 
+he was so the books of the size of hi
+2018-10-11 12:56:16,162 - __main__ - INFO - Temperature: 0.6, Generated text: 
+s 
+Wobbow, who had a fecest, who was a piller of 
+the castle was slowly got 
+appience to the grased,
+2018-10-11 12:56:18,820 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ too. What didn’t 
+was so wondering out,” said Ron, glowing his 
+hangs at the corner, and think he w
+2018-10-11 12:56:21,505 - __main__ - INFO - Temperature: 1.0, Generated text: 
+as pancically, went to 
+they will be through now to lufter, 
+he set off tomething fixty — ” 
+
+But th
+2018-10-11 12:56:24,197 - __main__ - INFO - Temperature: 1.2, Generated text: 
+e Chamber of Secrets. Ginny woke’s to scar into the trist. ...” 
+
+Harry’s fainters was armagoant, an
+2018-10-11 12:56:28,853 - __main__ - INFO - ----------Iteration 11 out of 200----------
+2018-10-11 13:01:19,551 - __main__ - INFO - Loss: 1.2552 Acc: 0.6279 Val Loss: 1.3738 Val Acc: 0.5951
+2018-10-11 13:01:19,650 - __main__ - INFO - Seed: 
+eenage survivor of You-Kn
+2018-10-11 13:01:19,650 - __main__ - INFO - Target: 
+ow-Who’s attack, 
+Harry Potter, 1 5, caused outrage yesterday by 
+accusing respectable and prominent
+2018-10-11 13:01:22,342 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ow-’Oo’s 
+see the stairs and spend out of the 
+bed, and he had been seen 
+something and spended into
+2018-10-11 13:01:25,004 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ the 
+book. He had been see the 
+person was standing at Harry. 
+
+“The Muggle borns of the street 
+an
+2018-10-11 13:01:27,677 - __main__ - INFO - Temperature: 0.4, Generated text: 
+d spent the stairs and 
+she wanted to help the door. 
+
+Harry looked out of the stairs and 
+his trunk
+2018-10-11 13:01:30,357 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ on his bed picked, 
+Ripper was a gard of Muggle same 
+
+
+
+Page | 58 Harry Potter and the Prisoner of
+2018-10-11 13:01:33,003 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ Azkaban - J.K. Rowling 
+
+
+
+
+He hand, arlow the knock in 
+he didn’t be the rest of his needed 
+again
+2018-10-11 13:01:35,676 - __main__ - INFO - Temperature: 1.0, Generated text: 
+, as anyone deeply clutch soon with her. They 
+refenly Ase shile now. Tom of A’ne nevers 
+ape dessaa
+2018-10-11 13:01:38,342 - __main__ - INFO - Temperature: 1.2, Generated text: 
+utes a fref, how never wold ... I help five you dead.  
+Page | 46 Harry Potter and the Prisoner of A
+2018-10-11 13:01:43,009 - __main__ - INFO - ----------Iteration 12 out of 200----------
+2018-10-11 13:06:34,031 - __main__ - INFO - Loss: 1.1521 Acc: 0.6511 Val Loss: 1.3198 Val Acc: 0.6171
+2018-10-11 13:06:34,133 - __main__ - INFO - Seed: 
+ 
+“Party! Gryffindor comm
+2018-10-11 13:06:34,133 - __main__ - INFO - Target: 
+on room, now!” 
+
+“Right,” said Harry, and feeling happier than he had 
+in ages, he and the rest of t
+2018-10-11 13:06:36,898 - __main__ - INFO - Temperature: 0.01, Generated text: 
+on 
+compartment on the crowd. 
+
+“I’m going to get it to the 
+compartment of the crowd. 
+
+“I’m going 
+2018-10-11 13:06:39,581 - __main__ - INFO - Temperature: 0.2, Generated text: 
+to get it to the front of the 
+corridor and the parror of the 
+compartment on the crowd. 
+
+“I think 
+2018-10-11 13:06:42,260 - __main__ - INFO - Temperature: 0.4, Generated text: 
+that was the barrier 
+had been to be to see the 
+cups and dead of the door of 
+the hippogriff to see
+2018-10-11 13:06:44,905 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ them them that he couldn’t be 
+been that the window finally smulling behind her arm 
+looking from a
+2018-10-11 13:06:47,597 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ ling and door had to jold into the summer of 
+Nonater Bad, and then a corcertment that 
+face with a
+2018-10-11 13:06:50,311 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ cloak,’ving doing on mid’s!” said Ron, going onien, mouth 
+that it was juts. “Which is someone work
+2018-10-11 13:06:52,992 - __main__ - INFO - Temperature: 1.2, Generated text: 
+,” said Mr. 
+Weasley.” 
+
+Anded Gryffindors, moan only qoack’s exhremenge. 
+
+Tom on mady slim breakfa
+2018-10-11 13:06:57,668 - __main__ - INFO - ----------Iteration 13 out of 200----------
+2018-10-11 13:11:48,745 - __main__ - INFO - Loss: 1.1418 Acc: 0.6564 Val Loss: 1.2451 Val Acc: 0.6279
+2018-10-11 13:11:48,843 - __main__ - INFO - Seed: 
+d to look ... but the pot
+2018-10-11 13:11:48,843 - __main__ - INFO - Target: 
+ion had turned a 
+burning red; the light of it shone through Harry’s 
+closed eyelids... 
+
+Wormtail w
+2018-10-11 13:11:51,589 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ion 
+was the class to the first 
+seats. 
+
+“Why did you do it would you to see the 
+staff of the comm
+2018-10-11 13:11:54,284 - __main__ - INFO - Temperature: 0.2, Generated text: 
+on room, 
+and the start of the staff of the 
+class to the field of the common room 
+and stuff of the
+2018-10-11 13:11:56,955 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ class to start 
+so that was the rest of the 
+common room. She was still smutting all the team. 
+
+“I
+2018-10-11 13:11:59,613 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ wouldn’t have the Snitchy 
+...” 
+
+The thing they had when the room, the 
+storm,” said Harry and Her
+2018-10-11 13:12:02,282 - __main__ - INFO - Temperature: 0.8, Generated text: 
+mione looked suddenly voice. “It’s all 
+dear,” said Harry, grinkingly something class,” said Snape h
+2018-10-11 13:12:04,971 - __main__ - INFO - Temperature: 1.0, Generated text: 
+eadshantly, “sometice all in, she whisped inside a 
+match, feering the clear to shake in his teaing 
+2018-10-11 13:12:07,646 - __main__ - INFO - Temperature: 1.2, Generated text: 
+eyes.” 
+
+Harry now spifted to say to the swop good clear 
+hoiting out of the knight Scabbar,” Hermio
+2018-10-11 13:12:12,332 - __main__ - INFO - ----------Iteration 14 out of 200----------
+2018-10-11 13:17:03,270 - __main__ - INFO - Loss: 1.1648 Acc: 0.6519 Val Loss: 1.2437 Val Acc: 0.6409
+2018-10-11 13:17:03,376 - __main__ - INFO - Seed: 
+lking 
+about one of the m
+2018-10-11 13:17:03,376 - __main__ - INFO - Target: 
+ost powerful wizards of all time, a 
+wizard who has eluded capture for almost three 
+decades!” 
+
+
+
+P
+2018-10-11 13:17:06,041 - __main__ - INFO - Temperature: 0.01, Generated text: 
+atter of 
+the dementors and saw that 
+Scabbers was the start of 
+the start of the start of 
+the star
+2018-10-11 13:17:08,750 - __main__ - INFO - Temperature: 0.2, Generated text: 
+t of the table of 
+the staircase, and started 
+the staircase to the matter 
+and said the Firebolt an
+2018-10-11 13:17:11,420 - __main__ - INFO - Temperature: 0.4, Generated text: 
+d 
+saw a large start of the 
+Streaming room, his face 
+shortly together and started 
+against the Fir
+2018-10-11 13:17:14,088 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ebolt, and 
+said how the Firebolt was 
+stairing face again, and really remained the 
+Firebolt for a 
+2018-10-11 13:17:16,746 - __main__ - INFO - Temperature: 0.8, Generated text: 
+lumped over to Hogwarts” 
+“rexical Harry obve plaoned at the 
+Firebolt cross that he was news.” 
+
+Ha
+2018-10-11 13:17:19,406 - __main__ - INFO - Temperature: 1.0, Generated text: 
+rry murded like a stonet, course, and 
+thought ... always Ron assured Malfoy. “What’s officage 
+pass
+2018-10-11 13:17:22,079 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ed Potion’s comfactible, I’ve no gather 
+after Hurrifmy, making Sirius Black fure 
+to me. Harry carr
+2018-10-11 13:17:26,735 - __main__ - INFO - ----------Iteration 15 out of 200----------
+2018-10-11 13:22:17,940 - __main__ - INFO - Loss: 1.1398 Acc: 0.6596 Val Loss: 1.3141 Val Acc: 0.6206
+2018-10-11 13:22:18,044 - __main__ - INFO - Seed: 
+been indistinguishable fr
+2018-10-11 13:22:18,044 - __main__ - INFO - Target: 
+om 
+the dark ground on which they stood. Even at this 
+distance, Harry had a funny feeling that he 
+
+2018-10-11 13:22:20,769 - __main__ - INFO - Temperature: 0.01, Generated text: 
+om the 
+conditions to take the class, and 
+the Slytherin team was still starting again. 
+
+“What’s a 
+2018-10-11 13:22:23,453 - __main__ - INFO - Temperature: 0.2, Generated text: 
+joke of the class, 
+and stretched the parchment 
+and saw the rest of the class, his 
+standing speed 
+2018-10-11 13:22:26,127 - __main__ - INFO - Temperature: 0.4, Generated text: 
+and pulled out of the condicious to 
+the trees. He was all streaking 
+the passage of the field of 
+P
+2018-10-11 13:22:28,786 - __main__ - INFO - Temperature: 0.6, Generated text: 
+age | 385 Harry Potter and the Prisoner of Azkaban - J.K. Rowling 
+
+
+
+
+“Hrack! The name in the conti
+2018-10-11 13:22:31,455 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ous of dreaming or thing’s more than the 
+stadium to speed as down 
+thrown common room. He was 
+defi
+2018-10-11 13:22:34,151 - __main__ - INFO - Temperature: 1.0, Generated text: 
+nitely clut — exacple of Honey!” said Snape, glittering the 
+Huftury moment, within wrever, Malfoy d
+2018-10-11 13:22:36,840 - __main__ - INFO - Temperature: 1.2, Generated text: 
+idn’t want to keep something day, she and Goyle snapped home pinustraw, Hanring sparted vooce. 
+
+“Sl
+2018-10-11 13:22:41,540 - __main__ - INFO - ----------Iteration 16 out of 200----------
+2018-10-11 13:27:32,559 - __main__ - INFO - Loss: 1.1075 Acc: 0.6635 Val Loss: 1.1784 Val Acc: 0.6427
+2018-10-11 13:27:32,668 - __main__ - INFO - Seed: 
+e,” 
+Harry went on, “and 
+2018-10-11 13:27:32,668 - __main__ - INFO - Target: 
+let something slip, I know they 
+didn’t mean to do it. It’s not their fault,” he repeated, 
+again a 
+2018-10-11 13:27:35,437 - __main__ - INFO - Temperature: 0.01, Generated text: 
+the shoulders were 
+staring at the cloak, and 
+the shoulders were staring at the cloak 
+on the cloak
+2018-10-11 13:27:38,161 - __main__ - INFO - Temperature: 0.2, Generated text: 
+. 
+
+“Ron,” said Harry, and Hermione 
+could have done that they 
+could have been to see the cloak on 
+2018-10-11 13:27:40,836 - __main__ - INFO - Temperature: 0.4, Generated text: 
+the bed; they 
+stared at the castle which was still 
+before the room was staring at Black. 
+
+“It was
+2018-10-11 13:27:43,537 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ a realize while you were in the portrait of a 
+werewolf. 
+
+“They have done that it was a dog. 
+
+“Ro
+2018-10-11 13:27:46,208 - __main__ - INFO - Temperature: 0.8, Generated text: 
+n’s while he had never seen, some of the enormous foor of back 
+now.” 
+
+“Oh,” said Black. “He’s been
+2018-10-11 13:27:48,892 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ to sort with a teethriof. He came acriined a 
+voice outside him.” 
+
+“Come with a dog,” Malfoy, his 
+2018-10-11 13:27:51,572 - __main__ - INFO - Temperature: 1.2, Generated text: 
+servant to the two ore voice of his under, 
+afterwards, we’s in his shriek again on the foot in my c
+2018-10-11 13:27:56,250 - __main__ - INFO - ----------Iteration 17 out of 200----------
+2018-10-11 13:32:47,354 - __main__ - INFO - Loss: 1.0715 Acc: 0.675 Val Loss: 1.4184 Val Acc: 0.5896
+2018-10-11 13:32:47,460 - __main__ - INFO - Seed: 
+ng for the person next to
+2018-10-11 13:32:47,460 - __main__ - INFO - Target: 
+ 
+me,” he retorted, which made Ron and Hermione 
+laugh and wiped the smirk off Pansy Parkinson’s fac
+2018-10-11 13:32:50,187 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ the 
+dementors are all so that the 
+support was still seemed to 
+have to see the dementors 
+were st
+2018-10-11 13:32:52,874 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ill seemed to the 
+dementors are and the dementors 
+would have been the only 
+potions and set off ag
+2018-10-11 13:32:55,537 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ain. 
+
+“They’ll have to hear the mind of the 
+dementors as he looked up at the 
+school for the castl
+2018-10-11 13:32:58,179 - __main__ - INFO - Temperature: 0.6, Generated text: 
+e. ...” 
+
+Harry put his cabin flying about the 
+absenprais to his bed. ...” 
+
+“Yes,” said Harry turn
+2018-10-11 13:33:00,864 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ed, but the 
+shadows or red open. ...” 
+
+They should another — ” 
+
+Harry was not going to leave hims
+2018-10-11 13:33:03,565 - __main__ - INFO - Temperature: 1.0, Generated text: 
+elf.  
+Next mean, at the dementors. I’ve been sure enough, Ron,” is 
+and I meang — ” 
+
+“— A Pere toi
+2018-10-11 13:33:06,255 - __main__ - INFO - Temperature: 1.2, Generated text: 
+stres?” 
+
+The dementors wanted to remember faces.” 
+
+“No!” said 
+Hagrid, alroad, fer out of step up,
+2018-10-11 13:33:10,937 - __main__ - INFO - ----------Iteration 18 out of 200----------
+2018-10-11 13:38:01,898 - __main__ - INFO - Loss: 1.1512 Acc: 0.6557 Val Loss: 1.3058 Val Acc: 0.6213
+2018-10-11 13:38:02,006 - __main__ - INFO - Seed: 
+ subject did he 
+want to 
+2018-10-11 13:38:02,006 - __main__ - INFO - Target: 
+teach?” 
+
+Somehow, Harry knew the answer even before 
+Dumbledore gave it. 
+
+“Defense Against the Dar
+2018-10-11 13:38:04,692 - __main__ - INFO - Temperature: 0.01, Generated text: 
+think the second with 
+his hand, and then he was 
+still and then the sound of the 
+summer with a str
+2018-10-11 13:38:07,346 - __main__ - INFO - Temperature: 0.2, Generated text: 
+aight of the 
+summer with a support of 
+the summer with a support 
+stairs again, and then he 
+was a 
+2018-10-11 13:38:10,032 - __main__ - INFO - Temperature: 0.4, Generated text: 
+sound of brightly foot out of the room with him a 
+supporter floor, and then they 
+were anxiously to
+2018-10-11 13:38:12,699 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ find out of the broomstick, 
+and the tiny was still for a 
+small came of a nesty of wizarding 
+with
+2018-10-11 13:38:15,354 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ the trush to the troubl on his sleesy with the 
+Whomping room with real arms.” 
+
+“So, I be allow go
+2018-10-11 13:38:18,020 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ing in 
+this sitchen to ticker. ...” 
+
+Mrs. Weasley still 
+
+were a silevan, he had survived behind e
+2018-10-11 13:38:20,696 - __main__ - INFO - Temperature: 1.2, Generated text: 
+veryone of 
+—or-it?” he tried barely, “it was talking,” said Ron readly. “We’ve 
+voocon’t. I carcarr
+2018-10-11 13:38:25,357 - __main__ - INFO - ----------Iteration 19 out of 200----------
+2018-10-11 13:43:16,168 - __main__ - INFO - Loss: 1.1906 Acc: 0.6488 Val Loss: 1.2398 Val Acc: 0.6404
+2018-10-11 13:43:16,272 - __main__ - INFO - Seed: 
+r and vanishing from view
+2018-10-11 13:43:16,272 - __main__ - INFO - Target: 
+. 
+
+Harry stood rooted on the spot and watched them 
+disappear. This was infuriating; he was already
+2018-10-11 13:43:18,974 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ and 
+started to be a shamrock 
+bright of the stadium and 
+started to see the stadium 
+started to th
+2018-10-11 13:43:21,633 - __main__ - INFO - Temperature: 0.2, Generated text: 
+e top of the 
+field. 
+
+“And the second wizards were 
+all about the field. The 
+tents of the stadium 
+2018-10-11 13:43:24,276 - __main__ - INFO - Temperature: 0.4, Generated text: 
+and speed over the 
+cords of the same of the 
+witches of the field into the 
+field. 
+
+“Ah — there’s 
+2018-10-11 13:43:26,940 - __main__ - INFO - Temperature: 0.6, Generated text: 
+a boyd to be a 
+people wind, she was not supporting 
+the top of the stadium, and 
+he saw that the Qu
+2018-10-11 13:43:29,592 - __main__ - INFO - Temperature: 0.8, Generated text: 
+affle Chasers, 
+but there was a bit of two.” 
+
+“Honestly!” 
+
+“Ludo!” said Harry. 
+
+“Tro,” said Hermi
+2018-10-11 13:43:32,280 - __main__ - INFO - Temperature: 1.0, Generated text: 
+one, looking glasses, 
+and had just left the box 
+with a lone. 
+
+“It’hal” 
+
+And was the Quidditch te
+2018-10-11 13:43:34,924 - __main__ - INFO - Temperature: 1.2, Generated text: 
+am 
+Page | 125 Harry Potter and the Goblet of Fire - J.K. Rowling 
+
+
+
+
+Harry wanted. “I’ll tried to 
+2018-10-11 13:43:39,593 - __main__ - INFO - ----------Iteration 20 out of 200----------
+2018-10-11 13:48:30,662 - __main__ - INFO - Loss: 1.1582 Acc: 0.651 Val Loss: 1.3527 Val Acc: 0.6114
+2018-10-11 13:48:30,771 - __main__ - INFO - Seed: 
+sley was wearing a brand-
+2018-10-11 13:48:30,771 - __main__ - INFO - Target: 
+new set of 
+amethyst-colored robes with a matching hat. 
+
+A moment later Bill and Charlie stood up a
+2018-10-11 13:48:33,550 - __main__ - INFO - Temperature: 0.01, Generated text: 
+robes 
+who had been so that the 
+staff was still staring at the 
+staff table. 
+
+“I have to be a far 
+2018-10-11 13:48:36,345 - __main__ - INFO - Temperature: 0.2, Generated text: 
+who had 
+been so silence and the time 
+the station to the top of the 
+room, and the staff was still 
+2018-10-11 13:48:39,063 - __main__ - INFO - Temperature: 0.4, Generated text: 
+below the 
+fire of which was a far and the 
+staff was a large protrude of 
+wand and the family hand 
+2018-10-11 13:48:41,851 - __main__ - INFO - Temperature: 0.6, Generated text: 
+to relieve what the kitchen note 
+was sitting off the train disgrace, and 
+he was finding forward to
+2018-10-11 13:48:44,553 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ the 
+look of she 
+sampaged the large champions of chair was 
+darked excitedly. 
+
+“Thank it was talk
+2018-10-11 13:48:47,258 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ing you, lost 
+Malfoy and Finally got toward the 
+Smells who the Great Hall, there was large, she di
+2018-10-11 13:48:50,056 - __main__ - INFO - Temperature: 1.2, Generated text: 
+dn’t hear the heads of the tining 
+bast throng? What are anywhere, and es later’s 
+unswertouse, but 
+2018-10-11 13:48:54,793 - __main__ - INFO - ----------Iteration 21 out of 200----------
+2018-10-11 13:53:45,888 - __main__ - INFO - Loss: 1.1384 Acc: 0.6586 Val Loss: 1.1964 Val Acc: 0.646
+2018-10-11 13:53:46,019 - __main__ - INFO - Seed: 
+around at 
+them. “About t
+2018-10-11 13:53:46,019 - __main__ - INFO - Target: 
+o be Sorted, I suppose?” 
+
+A few people nodded mutely. 
+
+“Hope to see you in Hufflepuff!” said the F
+2018-10-11 13:53:48,771 - __main__ - INFO - Temperature: 0.01, Generated text: 
+he time of the 
+staff table. 
+
+“Well, the same thing the spider was 
+starting to the two of the 
+sta
+2018-10-11 13:53:51,472 - __main__ - INFO - Temperature: 0.2, Generated text: 
+rt of the start of the 
+start of the desks and sat down to the 
+start to the top of the start of 
+th
+2018-10-11 13:53:54,151 - __main__ - INFO - Temperature: 0.4, Generated text: 
+e start to the Ministry. 
+
+“I think you want to think we had the castle 
+were almost to the spider a
+2018-10-11 13:53:56,810 - __main__ - INFO - Temperature: 0.6, Generated text: 
+nd to the middle of the 
+crowd in the fire and change at the 
+fire, but were all right and 
+moldy fo
+2018-10-11 13:53:59,457 - __main__ - INFO - Temperature: 0.8, Generated text: 
+r much to his big 
+with his leart at the top of the 
+way like the rest to buy he had dropped the cha
+2018-10-11 13:54:02,148 - __main__ - INFO - Temperature: 1.0, Generated text: 
+irs and prevent-him had been feel memory of the plates of 
+Professor Elf nervos almost on 
+them, sli
+2018-10-11 13:54:04,810 - __main__ - INFO - Temperature: 1.2, Generated text: 
+dh about nobody unniously,” said Fred. 
+
+“Op 
+Neville?” said Harry, sat largling. 
+
+He moved close t
+2018-10-11 13:54:09,483 - __main__ - INFO - ----------Iteration 22 out of 200----------
+2018-10-11 13:59:00,588 - __main__ - INFO - Loss: 1.1056 Acc: 0.6691 Val Loss: 1.233 Val Acc: 0.6488
+2018-10-11 13:59:00,691 - __main__ - INFO - Seed: 
+been some more concrete r
+2018-10-11 13:59:00,691 - __main__ - INFO - Target: 
+eason for 
+his fury? Grindelwald, expelled from Durmstrang for 
+near-fatal attacks upon fellow stude
+2018-10-11 13:59:03,357 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ed and started to 
+have to see him a strong 
+of the castle and started to 
+happen to the castle and 
+2018-10-11 13:59:06,013 - __main__ - INFO - Temperature: 0.2, Generated text: 
+started to 
+have to see him a stone of 
+the castle and started to 
+hand a stone of the common room o
+2018-10-11 13:59:08,699 - __main__ - INFO - Temperature: 0.4, Generated text: 
+f 
+everyone else still watching 
+her hands. 
+
+“It’s all the rest of the 
+Great Hall and the champion
+2018-10-11 13:59:11,340 - __main__ - INFO - Temperature: 0.6, Generated text: 
+s to 
+the person into the differences 
+again. 
+
+“I derine what about that the moment that 
+did not t
+2018-10-11 13:59:13,994 - __main__ - INFO - Temperature: 0.8, Generated text: 
+hink the room before he’d very better. 
+
+“Well, what’s no morning,” said 
+Hermione, fow anything of 
+2018-10-11 13:59:16,657 - __main__ - INFO - Temperature: 1.0, Generated text: 
+every words 
+... 
+
+
+
+Page | 237 
+
+
+
+Harry Potter and the Goblet of Fire - J.K. Rowling 
+
+
+
+
+But Harr
+2018-10-11 13:59:19,319 - __main__ - INFO - Temperature: 1.2, Generated text: 
+y left the heards, had 
+upstates and over to the 
+oppression into converal of the 
+arailm something 
+2018-10-11 13:59:23,963 - __main__ - INFO - ----------Iteration 23 out of 200----------
+2018-10-11 14:04:15,269 - __main__ - INFO - Loss: 1.1195 Acc: 0.663 Val Loss: 1.2951 Val Acc: 0.6157
+2018-10-11 14:04:15,372 - __main__ - INFO - Seed: 
+sing his 
+wand. “Lupin sa
+2018-10-11 14:04:15,373 - __main__ - INFO - Target: 
+ys you’ve got an Invisibility Cloak, 
+but it won’t stay on while we’re flying; this’ll disguise 
+you
+2018-10-11 14:04:18,050 - __main__ - INFO - Temperature: 0.01, Generated text: 
+y that was 
+the tent with a short-bag 
+working about the corner of the 
+dragons were all the crowd 
+
+2018-10-11 14:04:20,725 - __main__ - INFO - Temperature: 0.2, Generated text: 
+was an instead of the trees, and the 
+staircase was still staring into the castle 
+with a short-bag 
+2018-10-11 14:04:23,403 - __main__ - INFO - Temperature: 0.4, Generated text: 
+on the fireplace were all the 
+dragon in front of the start. 
+
+“Don’t go to hear them to talk to the
+2018-10-11 14:04:26,046 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ fire. 
+
+“He’s been trying to do it. 
+
+“Don’t really don’t try that?” 
+
+Hermione wanted to get the s
+2018-10-11 14:04:28,694 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ame time the caman 
+for him fire ... why yelled to tell you a good trance 
+and staring, her hand on 
+2018-10-11 14:04:31,339 - __main__ - INFO - Temperature: 1.0, Generated text: 
+its fast, “and he had been showing height around these 
+fices, and ferred darge again, eichher, and 
+2018-10-11 14:04:34,028 - __main__ - INFO - Temperature: 1.2, Generated text: 
+she’d been — ” 
+
+“Go back to complain for tsanfinline, Harry waited, 
+... cadding dulk-now, lead, “g
+2018-10-11 14:04:38,679 - __main__ - INFO - ----------Iteration 24 out of 200----------
+2018-10-11 14:09:29,660 - __main__ - INFO - Loss: 1.1279 Acc: 0.6635 Val Loss: 1.2417 Val Acc: 0.6389
+2018-10-11 14:09:29,767 - __main__ - INFO - Seed: 
+celot 
+thought!” 
+
+Doge l
+2018-10-11 14:09:29,767 - __main__ - INFO - Target: 
+ooked to be on the verge of tears. Auntie Muriel, 
+who seemed to be enjoying herself hugely, snapped
+2018-10-11 14:09:32,462 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ooked at her and said 
+she was a lot of the table with a 
+start of the table with a 
+large staircase
+2018-10-11 14:09:35,118 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ of the stairs and staring at her 
+and said, “I’m not telling the 
+top of the table and sat down the
+2018-10-11 14:09:37,764 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ first task in for a 
+champions. 
+
+“What?” said Ron, and Harry said 
+she was a foot of some of the 
+
+2018-10-11 14:09:40,442 - __main__ - INFO - Temperature: 0.6, Generated text: 
+castle of the first task was 
+clutching a fun in he walked and 
+around the letter was a champion tha
+2018-10-11 14:09:43,131 - __main__ - INFO - Temperature: 0.8, Generated text: 
+n the same things Harry and he was 
+skidding and littering her 
+around the paddock to the boys’ hat.
+2018-10-11 14:09:45,802 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ “Horishing in through her 
+s deep shave in his Privet 
+had benee he owd handbock, it was 
+over whic
+2018-10-11 14:09:48,494 - __main__ - INFO - Temperature: 1.2, Generated text: 
+h Gidn’t say to help as particularly completely. 
+
+“What did may dance,” said Ron, fewhering deriser
+2018-10-11 14:09:53,131 - __main__ - INFO - ----------Iteration 25 out of 200----------
+2018-10-11 14:14:44,281 - __main__ - INFO - Loss: 1.1295 Acc: 0.66 Val Loss: 1.198 Val Acc: 0.6424
+2018-10-11 14:14:44,386 - __main__ - INFO - Seed: 
+papers. To me, Potter, yo
+2018-10-11 14:14:44,387 - __main__ - INFO - Target: 
+u are 
+nothing but a nasty little boy who considers rules to 
+be beneath him.” 
+
+Harry tipped the po
+2018-10-11 14:14:47,063 - __main__ - INFO - Temperature: 0.01, Generated text: 
+u 
+can’t do?” 
+
+“I don’t know what I don’t know what I 
+have to go with the map and 
+the stairs and 
+2018-10-11 14:14:49,718 - __main__ - INFO - Temperature: 0.2, Generated text: 
+staring at 
+the stairs, and saw him as they 
+staring at the stairs, and saw Harry as 
+the water with
+2018-10-11 14:14:52,355 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ his stomach to 
+an the staff of the water, 
+and the map and the painting 
+with the corridor, and th
+2018-10-11 14:14:54,990 - __main__ - INFO - Temperature: 0.6, Generated text: 
+e 
+point of below the egg flight 
+in the stairs, staring at the bathroom. 
+
+Harry suddenly glanced a
+2018-10-11 14:14:57,648 - __main__ - INFO - Temperature: 0.8, Generated text: 
+t the lake of the bottom of the lake, 
+climbing down at the dark of the lines atather that Harry saw
+2018-10-11 14:15:00,317 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ Professor McGonagall in the castle ot, Harry Potter, talk that — yeh’re 
+having’s is I neveered for
+2018-10-11 14:15:02,983 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ than them I wan, now, I’m on holans,” 
+said — That. at his fogether, Cedric Pilusw him barking at H
+2018-10-11 14:15:07,646 - __main__ - INFO - ----------Iteration 26 out of 200----------
+2018-10-11 14:19:58,786 - __main__ - INFO - Loss: 1.1005 Acc: 0.6682 Val Loss: 1.1288 Val Acc: 0.6684
+2018-10-11 14:19:58,891 - __main__ - INFO - Seed: 
+ much disposed to follow.
+2018-10-11 14:19:58,891 - __main__ - INFO - Target: 
+ Harry glanced at 
+Ron and Hermione, who sighed but nodded, and the 
+three of them set off after Hag
+2018-10-11 14:20:01,579 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ 
+
+“We are there about the champions and 
+started to be able to be able to be 
+the only one of the c
+2018-10-11 14:20:04,234 - __main__ - INFO - Temperature: 0.2, Generated text: 
+lass and started to 
+be a bit of the common room to 
+help him and started behind them about the 
+wil
+2018-10-11 14:20:06,904 - __main__ - INFO - Temperature: 0.4, Generated text: 
+d in the stands to the 
+one of the gillow table and starting to be the 
+window. 
+
+“What’s the way it
+2018-10-11 14:20:09,568 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ made them. 
+
+“They’re going to be the most too. ...” 
+
+Harry didn’t been a short 
+steps on the boci
+2018-10-11 14:20:12,217 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ng worth enormost lipot. 
+
+“Mr. Potter’s coming,” Harry said, hooseting on the wild, which 
+scamed t
+2018-10-11 14:20:14,893 - __main__ - INFO - Temperature: 1.0, Generated text: 
+oward the calling the coint and 
+rumes hit his book, he began to 
+wol they looked — thoughe Dobby?” 
+2018-10-11 14:20:17,559 - __main__ - INFO - Temperature: 1.2, Generated text: 
+sank Sirius. “He’s eouble over Georgurath. he arrived. “What’t he keee. I soing better of 
+the dunge
+2018-10-11 14:20:22,243 - __main__ - INFO - ----------Iteration 27 out of 200----------
+2018-10-11 14:25:13,254 - __main__ - INFO - Loss: 1.0836 Acc: 0.6743 Val Loss: 1.3047 Val Acc: 0.623
+2018-10-11 14:25:13,361 - __main__ - INFO - Seed: 
+rted,” said Ron, 
+droppin
+2018-10-11 14:25:13,361 - __main__ - INFO - Target: 
+g his trunk at the foot of the front steps and 
+crossing quietly to look through a brightly lit wind
+2018-10-11 14:25:16,086 - __main__ - INFO - Temperature: 0.01, Generated text: 
+g at Harry and said, “I 
+have to say the champions and 
+the champions and said, “I 
+was the one of t
+2018-10-11 14:25:18,759 - __main__ - INFO - Temperature: 0.2, Generated text: 
+he champions and 
+the champions and the champions and 
+the door of the champions and 
+the silence of
+2018-10-11 14:25:21,453 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ the Ministry 
+of Magical Longbottom. ... 
+
+Harry turned to the paper and saw the 
+Slytherins table.
+2018-10-11 14:25:24,099 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ 
+
+The letter from the corridors. 
+
+“He was the tried to see him 
+inside. 
+
+“Better these way,” said
+2018-10-11 14:25:26,762 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ Ron limply, “it could be in the champions and 
+Harry saw Mrs. Weasley, the champions was 
+going the
+2018-10-11 14:25:29,435 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ir top become, has you-, 
+carrying out of the chamber. The 
+shiplow of the corridor for a black 
+bit
+2018-10-11 14:25:32,108 - __main__ - INFO - Temperature: 1.2, Generated text: 
+e in favola that. He sat up,” said Mrs. Weasley, applause information for Crouch, and not one?” said
+2018-10-11 14:25:36,766 - __main__ - INFO - ----------Iteration 28 out of 200----------
+2018-10-11 14:30:27,663 - __main__ - INFO - Loss: 1.2439 Acc: 0.6606 Val Loss: 1.3078 Val Acc: 0.6347
+2018-10-11 14:30:27,772 - __main__ - INFO - Seed: 
+ back out of the page, in
+2018-10-11 14:30:27,772 - __main__ - INFO - Target: 
+ his very own ink, 
+came words Harry had never written. 
+
+
+
+Page | 267 Harry Potter and the Chamber 
+2018-10-11 14:30:30,445 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ the 
+spider’s face, and then he 
+had been still standing at the 
+spider’s face. 
+
+“You have been th
+2018-10-11 14:30:33,105 - __main__ - INFO - Temperature: 0.2, Generated text: 
+an a second that he 
+had been still silver seemed to be 
+surveying the spider’s face. 
+
+“You see wha
+2018-10-11 14:30:35,756 - __main__ - INFO - Temperature: 0.4, Generated text: 
+t happened to 
+reach him a stone steps of way a stone second that the spires 
+were still stirring th
+2018-10-11 14:30:38,424 - __main__ - INFO - Temperature: 0.6, Generated text: 
+e fingers. 
+
+“You did,” said Harry, staring at the spi□al 
+trance, “for you?” 
+
+He had seen him on t
+2018-10-11 14:30:41,073 - __main__ - INFO - Temperature: 0.8, Generated text: 
+he sp*eak. 
+
+“Yes,” said Harry, who was that he haXfed past 
+Page | 726 Harry Potter a*d the Gobl*t 
+2018-10-11 14:30:43,739 - __main__ - INFO - Temperature: 1.0, Generated text: 
+of %ire - J.K. Rowling 
+
+
+
+
+“It is sitisfifte-.”. draw it for that 
+that meyon’usted Diggory ’s thin
+2018-10-11 14:30:46,378 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ 
+throat. 
+
+“Villition findly it inlolt, 
+shallow more start in the headstone 
+Death Eater, one of h
+2018-10-11 14:30:51,033 - __main__ - INFO - ----------Iteration 29 out of 200----------
+2018-10-11 14:35:42,166 - __main__ - INFO - Loss: 1.1012 Acc: 0.6687 Val Loss: 1.4439 Val Acc: 0.6026
+2018-10-11 14:35:42,288 - __main__ - INFO - Seed: 
+“I want to be on the 
+spo
+2018-10-11 14:35:42,288 - __main__ - INFO - Target: 
+t. Your last letter ... well, let’s just say things are 
+getting fishier. I’ve been stealing the pap
+2018-10-11 14:35:44,960 - __main__ - INFO - Temperature: 0.01, Generated text: 
+t of the station, and the 
+summer had been the sight of the 
+street and stared at the 
+street. 
+
+“Yo
+2018-10-11 14:35:47,617 - __main__ - INFO - Temperature: 0.2, Generated text: 
+u have to see the sound of the 
+street. 
+
+“I am — ” said Harry. 
+
+“You have to see the third task.” 
+2018-10-11 14:35:50,314 - __main__ - INFO - Temperature: 0.4, Generated text: 
+
+
+“I must a weak the sound of his hands. 
+
+“You are the only one of the 
+beautiful that had been a b
+2018-10-11 14:35:52,982 - __main__ - INFO - Temperature: 0.6, Generated text: 
+eautiful of 
+the Burrow to him, he had 
+a forest who looked as though 
+Harry could have %woke the bo
+2018-10-11 14:35:55,640 - __main__ - INFO - Temperature: 0.8, Generated text: 
+y of ... 
+
+“I will lo reel it?” 
+
+Harry began to see a crowd 
+with a whole memories out of 
+headmand
+2018-10-11 14:35:58,301 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ on the look at your face in that, ripp . . . a letter eyes 
+in those chairs, and Whet he 
+were hims
+2018-10-11 14:36:00,939 - __main__ - INFO - Temperature: 1.2, Generated text: 
+elf. Almost care Apparating the silence, to 
+turn ug oftrech it to protectly get the lot ptou,” he e
+2018-10-11 14:36:05,597 - __main__ - INFO - ----------Iteration 30 out of 200----------
+2018-10-11 14:40:56,634 - __main__ - INFO - Loss: 1.283 Acc: 0.6456 Val Loss: 1.6749 Val Acc: 0.6062
+2018-10-11 14:40:56,744 - __main__ - INFO - Seed: 
+issolves them or somethin
+2018-10-11 14:40:56,744 - __main__ - INFO - Target: 
+g... 
+I wonder where the tearoom is?” 
+
+“Fifth floor,” said Harry, remembering the sign over 
+the We
+2018-10-11 14:40:59,432 - __main__ - INFO - Temperature: 0.01, Generated text: 
+g 
+wa*ted to stay and strain%ed 
+again. 
+
+“What did you think they were 
+stay over the stair%aster o
+2018-10-11 14:41:02,112 - __main__ - INFO - Temperature: 0.2, Generated text: 
+f 
+the streetlage and the signal 
+owl was standing at the st%ai* and 
+started at the back of the 
+to
+2018-10-11 14:41:04,801 - __main__ - INFO - Temperature: 0.4, Generated text: 
+p of the parents and dropped his hand 
+and strained from the stairs. 
+
+“What are you to keep the Dur
+2018-10-11 14:41:07,489 - __main__ - INFO - Temperature: 0.6, Generated text: 
+sleys’s 
+too much to him. Harry could not be 
+bow a*ound the first wizard and kissed the cal'b%. 
+
+“
+2018-10-11 14:41:10,152 - __main__ - INFO - Temperature: 0.8, Generated text: 
+Well, it could sure, astour out of his 
+expression. “Here, the way 
+Harry,” sa'd Moody. ~utti%g away
+2018-10-11 14:41:12,807 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ for the about rude cuX signaly kept him just fell again. He 
+turned awaypess. 
+
+“A% up!” she w□ilde
+2018-10-11 14:41:15,452 - __main__ - INFO - Temperature: 1.2, Generated text: 
+d, 
+until her dairbolts, pulling a settle steaming — what I don’t wart an 
+mom%it, I told s],” he ad
+2018-10-11 14:41:20,138 - __main__ - INFO - ----------Iteration 31 out of 200----------
+2018-10-11 14:46:11,257 - __main__ - INFO - Loss: 1.1493 Acc: 0.661 Val Loss: 1.2674 Val Acc: 0.6313
+2018-10-11 14:46:11,372 - __main__ - INFO - Seed: 
+d him and both 
+were chil
+2018-10-11 14:46:11,372 - __main__ - INFO - Target: 
+dless. While his will makes it perfectly plain 
+that he wants you to have the house, it is 
+neverthe
+2018-10-11 14:46:14,089 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ding and started at 
+the door and started at the 
+door and started at the stairs, and 
+the street be
+2018-10-11 14:46:16,746 - __main__ - INFO - Temperature: 0.2, Generated text: 
+hind him. 
+
+“What d’you really say he was 
+still behind him, and the 
+door was still behind him. 
+
+“
+2018-10-11 14:46:19,404 - __main__ - INFO - Temperature: 0.4, Generated text: 
+You’re to say the I do?” said Harry. 
+
+“I didn’t think that have heard to think 
+about the door and 
+2018-10-11 14:46:22,082 - __main__ - INFO - Temperature: 0.6, Generated text: 
+put it and 
+said a moment to make it and the thing if they were up to the Death Eaters and 
+the mome
+2018-10-11 14:46:24,750 - __main__ - INFO - Temperature: 0.8, Generated text: 
+nt to believe my son?” said Harry, guring at, 
+room and the Ministry. As Sirius seems the sight of s
+2018-10-11 14:46:27,431 - __main__ - INFO - Temperature: 1.0, Generated text: 
+neak under her part to running up a room, several of them 
+haven’t illusing Curse,” 
+said her very o
+2018-10-11 14:46:30,084 - __main__ - INFO - Temperature: 1.2, Generated text: 
+dd and thrown a woing fending and closhed. 
+
+
+
+Page |  randed with rack gensill marchament eaa at th
+2018-10-11 14:46:34,755 - __main__ - INFO - ----------Iteration 32 out of 200----------
+2018-10-11 14:51:25,980 - __main__ - INFO - Loss: 1.1459 Acc: 0.6611 Val Loss: 1.3782 Val Acc: 0.6294
+2018-10-11 14:51:26,120 - __main__ - INFO - Seed: 
+nce as people began 
+movi
+2018-10-11 14:51:26,120 - __main__ - INFO - Target: 
+ng toward the entrance hall. 
+
+“How did you do?” asked Ron, hurrying toward Harry. 
+“I think I felt 
+2018-10-11 14:51:28,844 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ng at the stairs against the 
+chains and the walls of the 
+badge of the walls. 
+
+“We have a look of 
+2018-10-11 14:51:31,525 - __main__ - INFO - Temperature: 0.2, Generated text: 
+the time, 
+passed at the stairs against the 
+chains and the walls of the 
+badge of the room and pull
+2018-10-11 14:51:34,199 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ing a 
+prefect wall then, and the 
+left of the flask of the room. 
+
+“I don’t believe the Pottering 
+
+2018-10-11 14:51:36,870 - __main__ - INFO - Temperature: 0.6, Generated text: 
+Sorcery and Mad-Eye had not asked the 
+pockets of would be careful one what 
+he might be a trailing 
+2018-10-11 14:51:39,508 - __main__ - INFO - Temperature: 0.8, Generated text: 
+chains always 
+present for it... But some poking time one of the way,” 
+said Mrs. Weasley, staring h
+2018-10-11 14:51:42,164 - __main__ - INFO - Temperature: 1.0, Generated text: 
+is 
+thronk. 
+
+“The push’s, but because he hos 
+readon when Weasley didn’t get one of the 
+Roise when
+2018-10-11 14:51:44,830 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ Brown bedside about it — ” 
+
+“Come atop resicted elidel. 
+Everypolcasing when he caught 
+the returg
+2018-10-11 14:51:49,471 - __main__ - INFO - ----------Iteration 33 out of 200----------
+2018-10-11 14:56:40,565 - __main__ - INFO - Loss: 1.2736 Acc: 0.6549 Val Loss: 1.42 Val Acc: 0.6097
+2018-10-11 14:56:40,680 - __main__ - INFO - Seed: 
+Well, I confess I am surp
+2018-10-11 14:56:40,680 - __main__ - INFO - Target: 
+rised to see you out and 
+about, Bellatrix.” 
+
+“Really? Why?” asked Hermione. 
+
+“Well,” Travers coug
+2018-10-11 14:56:43,381 - __main__ - INFO - Temperature: 0.01, Generated text: 
+rised that 
+were staring at Harry and 
+the staff tabl% and the staff table and 
+stared at Harry and 
+2018-10-11 14:56:46,075 - __main__ - INFO - Temperature: 0.2, Generated text: 
+the staff table%ts 
+and the first years and stared at 
+Harry and the staff table%t 
+and the staff ta
+2018-10-11 14:56:48,725 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ble the staff was she 
+had still staring at the 
+common common room and was 
+expected the conversati
+2018-10-11 14:56:51,368 - __main__ - INFO - Temperature: 0.6, Generated text: 
+on that a 
+seat of him that they became 
+not a low voice. He grinned up at 
+him as %unt Petinia and 
+2018-10-11 14:56:54,032 - __main__ - INFO - Temperature: 0.8, Generated text: 
+her eyes behind him. A 
+nervous drighted of the caveration of the chair that it was wearing 
+an achu
+2018-10-11 14:56:56,705 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ss moming. They begin shuttering. 
+
+“What did you turn Clitter in the Triwizard heading 
+how ong aza
+2018-10-11 14:56:59,377 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ke my detentions things 
+but we have too, Hedwigy,” said 
+Ginny. “W%it, everyone saying Ifter 
+You-K
+2018-10-11 14:57:04,067 - __main__ - INFO - ----------Iteration 34 out of 200----------
+2018-10-11 15:01:54,947 - __main__ - INFO - Loss: 1.2007 Acc: 0.6646 Val Loss: 1.3343 Val Acc: 0.6462
+2018-10-11 15:01:55,065 - __main__ - INFO - Seed: 
+tch. Let him smell 
+fresh
+2018-10-11 15:01:55,065 - __main__ - INFO - Target: 
+ air for once. She said my mother would have 
+wanted it. She told my father that my mother had 
+died
+2018-10-11 15:01:57,734 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ly and stared at the 
+stairs. 
+
+“You can see the thing that he had 
+started to start to the chair an
+2018-10-11 15:02:00,404 - __main__ - INFO - Temperature: 0.2, Generated text: 
+d 
+stared at the stairs. 
+
+“You can see it it?” said Harry. 
+
+“I was about to %eplace the 
+students 
+2018-10-11 15:02:03,050 - __main__ - INFO - Temperature: 0.4, Generated text: 
+of the detention of 
+her word with a moment that she had 
+finished the class and stared at her. 
+
+“I
+2018-10-11 15:02:05,725 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ was reading anything telling him to perform the 
+caretaker, the the small sake of 
+the sput in the 
+2018-10-11 15:02:08,390 - __main__ - INFO - Temperature: 0.8, Generated text: 
+wheee horrified anger that it was a 
+spreading watch of silence 
+overhearing a word in the start-the
+2018-10-11 15:02:11,074 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ory?” Ron was 
+comiep with a greaty stop to 
+stated examination straight to her wingow. 
+
+looks afte
+2018-10-11 15:02:13,751 - __main__ - INFO - Temperature: 1.2, Generated text: 
+r look at the anti, 
+
+and sitting s. as the thing he was not see. Her hest skin he entered %y dead. 
+2018-10-11 15:02:18,407 - __main__ - INFO - ----------Iteration 35 out of 200----------
+2018-10-11 15:07:09,092 - __main__ - INFO - Loss: 1.1324 Acc: 0.669 Val Loss: 1.1822 Val Acc: 0.6517
+2018-10-11 15:07:09,213 - __main__ - INFO - Seed: 
+ry merely looked at Slugh
+2018-10-11 15:07:09,213 - __main__ - INFO - Target: 
+orn. Slughorn ’s watery 
+eyes slid over Harry’s scar, this time taking in the rest 
+of his face. 
+
+“
+2018-10-11 15:07:11,916 - __main__ - INFO - Temperature: 0.01, Generated text: 
+t 
+and said in the fire. 
+
+“Well, I don’t know what you 
+don’t be a surprise,” said Hermione angrily
+2018-10-11 15:07:14,561 - __main__ - INFO - Temperature: 0.2, Generated text: 
+. 
+
+“No,” said Hermione in a grimpy of the 
+street of the completely 
+with a short of the staff tabl
+2018-10-11 15:07:17,252 - __main__ - INFO - Temperature: 0.4, Generated text: 
+e with a small smile from the 
+more later and he snigged the 
+fire and the barman of strength onto t
+2018-10-11 15:07:19,939 - __main__ - INFO - Temperature: 0.6, Generated text: 
+he 
+fire. 
+
+“Well, I’ve to give us up a — she doesn’t 
+have a precisent windows and 
+the class, it w
+2018-10-11 15:07:22,606 - __main__ - INFO - Temperature: 0.8, Generated text: 
+as Harry dropped his best 
+regly. “Aren’t you you see to resust her I wouldn’t ever left we’ll do an
+2018-10-11 15:07:25,286 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ything that 
+you just was a life. 
+
+She sat the whole white spellt half the 
+hand opposite clipboard
+2018-10-11 15:07:27,939 - __main__ - INFO - Temperature: 1.2, Generated text: 
+. 
+
+Oightgture seggaduliny danchoelm even undecliker in she was 
+therefulap that the probasser 
+camp
+2018-10-11 15:07:32,602 - __main__ - INFO - ----------Iteration 36 out of 200----------
+2018-10-11 15:12:23,482 - __main__ - INFO - Loss: 1.0925 Acc: 0.6721 Val Loss: 1.2477 Val Acc: 0.6425
+2018-10-11 15:12:23,596 - __main__ - INFO - Seed: 
+ 
+and pulling the bed cov
+2018-10-11 15:12:23,596 - __main__ - INFO - Target: 
+ers higher up his chest. “No, 
+no — it’s nothing — it’s — I — ” 
+
+
+
+Page | 646Harry Potter and the O
+2018-10-11 15:12:26,307 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ered 
+their bag and stared at him. 
+
+“I don’t think he’s a better 
+secret secret secret that he was 
+2018-10-11 15:12:28,962 - __main__ - INFO - Temperature: 0.2, Generated text: 
+
+happily to read their beds of 
+the fires and then said the 
+street was staring at her 
+and left his
+2018-10-11 15:12:31,636 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ head. “I mean, 
+the Dark Arts arms of her 
+friend had been spent that the 
+floor was the only gray 
+2018-10-11 15:12:34,315 - __main__ - INFO - Temperature: 0.6, Generated text: 
+was 
+thinking me, I mean, as she 
+was on the changing of the form of the 
+hall to the rest of the co
+2018-10-11 15:12:36,965 - __main__ - INFO - Temperature: 0.8, Generated text: 
+rridor 
+was been examined it made somebody he had 
+had from them around his 
+class in a moment that 
+2018-10-11 15:12:39,651 - __main__ - INFO - Temperature: 1.0, Generated text: 
+he was 
+straightened to Hagrid’s ears. “There’s a charfes?” Harry said, 
+stronging as they went once
+2018-10-11 15:12:42,342 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ what he 
+told him — let’s after you anyone closely feen 
+began what they going to as disgoicad his 
+2018-10-11 15:12:47,012 - __main__ - INFO - ----------Iteration 37 out of 200----------
+2018-10-11 15:17:38,009 - __main__ - INFO - Loss: 1.157 Acc: 0.6563 Val Loss: 1.2287 Val Acc: 0.6408
+2018-10-11 15:17:38,130 - __main__ - INFO - Seed: 
+e Order of the Phoenix - 
+2018-10-11 15:17:38,130 - __main__ - INFO - Target: 
+J.K. Rowling 
+
+
+
+
+“You heard your father,” whispered Mrs. Weasley, “we 
+are not discussing this here
+2018-10-11 15:17:40,817 - __main__ - INFO - Temperature: 0.01, Generated text: 
+J.K. Rowling 
+
+
+
+
+“What d’you mean?” said Hagrid. “Well, I was 
+standin’ an’ I was being 
+and they w
+2018-10-11 15:17:43,482 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ere standing to 
+see the compent of the companious 
+ones and the complete of the 
+back of the castle
+2018-10-11 15:17:46,130 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ and said 
+Ron glowered at Ron. 
+
+“Well, they don’t get ter go an’ I saw it 
+the suns of the stadium
+2018-10-11 15:17:48,799 - __main__ - INFO - Temperature: 0.6, Generated text: 
+. 
+Torched away by the horses behind him. 
+
+“You sank they didn’ know why 
+he’d hard to answer; Hagr
+2018-10-11 15:17:51,469 - __main__ - INFO - Temperature: 0.8, Generated text: 
+id’s 
+arms tipped her head and the grounds 
+again; Hermione looked up the drowling broom bring every
+2018-10-11 15:17:54,143 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ tin, as She instead, tagged. 
+
+“Well, I’ve been away, I haven’t in useful.” 
+
+“I suppose you’re goi
+2018-10-11 15:17:56,834 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ng the must ter mean?” 
+
+Harry lauded out around much. “Oh, they us,” said 
+Ron, looking, 
+strakin’ 
+2018-10-11 15:18:01,496 - __main__ - INFO - ----------Iteration 38 out of 200----------
+2018-10-11 15:22:52,455 - __main__ - INFO - Loss: 1.1448 Acc: 0.6614 Val Loss: 1.238 Val Acc: 0.6384
+2018-10-11 15:22:52,573 - __main__ - INFO - Seed: 
+said, in a voice distorte
+2018-10-11 15:22:52,573 - __main__ - INFO - Target: 
+d by suppressed rage, 
+“Very well, very well ... cleared of all charges.” 
+
+“Excellent,” said Dumble
+2018-10-11 15:22:55,258 - __main__ - INFO - Temperature: 0.01, Generated text: 
+d to the 
+door. 
+
+“Well, you were all right, 
+then?” 
+
+“Well, you were all right, 
+then?” 
+
+“Well, y
+2018-10-11 15:22:57,919 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ou can have to be 
+the only sort of the wall 
+where the wizard was a stand 
+black on the door. He ha
+2018-10-11 15:23:00,579 - __main__ - INFO - Temperature: 0.4, Generated text: 
+d 
+felt suddenly to have a blood 
+other than realized looking at 
+Harry and Ron clunking the 
+stairc
+2018-10-11 15:23:03,260 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ase on the floor and 
+pretending to stop what he was going to 
+think the dummy even the 
+teachers on
+2018-10-11 15:23:05,930 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ what had had seen that move golding him — ” 
+
+“What?” said Harry at either short. 
+
+“I think he’s o
+2018-10-11 15:23:08,586 - __main__ - INFO - Temperature: 1.0, Generated text: 
+pen, bad!” he whesshered, “could what Umbridge 
+has black darkness... 
+
+And him the sock wlimbed sle
+2018-10-11 15:23:11,250 - __main__ - INFO - Temperature: 1.2, Generated text: 
+eping upon all the 
+notelent letter ups he appeared pice flearm in his corridor, but 
+Ravenclaw and 
+2018-10-11 15:23:15,909 - __main__ - INFO - ----------Iteration 39 out of 200----------
+2018-10-11 15:28:06,748 - __main__ - INFO - Loss: 1.1477 Acc: 0.6616 Val Loss: 1.2028 Val Acc: 0.6503
+2018-10-11 15:28:06,869 - __main__ - INFO - Seed: 
+would not have been surpr
+2018-10-11 15:28:06,869 - __main__ - INFO - Target: 
+ised to 
+know that Greyback could see it. “If you’re telling the 
+truth, ugly, you’ve got nothing to
+2018-10-11 15:28:09,549 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ised to 
+be all over the corridors and 
+staring at the corridors and 
+staring at the corridors and 
+
+2018-10-11 15:28:12,218 - __main__ - INFO - Temperature: 0.2, Generated text: 
+was a start of the Department of Mysteries, and 
+what was not as though he was 
+standing to his feet
+2018-10-11 15:28:14,878 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ again, as 
+though he had not had to be 
+proudly and the snake are the 
+courtroom in the table in th
+2018-10-11 15:28:17,539 - __main__ - INFO - Temperature: 0.6, Generated text: 
+e 
+resist of the hospital wings 
+slowly to the corridors with 
+his wand and pulling it at the should
+2018-10-11 15:28:20,181 - __main__ - INFO - Temperature: 0.8, Generated text: 
+er, out of the 
+snake and so not ask his mother’s rose on the corridors had no 
+control of staring a
+2018-10-11 15:28:22,835 - __main__ - INFO - Temperature: 1.0, Generated text: 
+t the door over onto 
+his expression again his 
+high-looking futurn fool and 
+kissed himself out of 
+2018-10-11 15:28:25,493 - __main__ - INFO - Temperature: 1.2, Generated text: 
+her hands. 
+
+He was looking talking at them. There was a headline rollingsidedlock, expeeiened Group
+2018-10-11 15:28:30,139 - __main__ - INFO - ----------Iteration 40 out of 200----------
+2018-10-11 15:33:21,217 - __main__ - INFO - Loss: 1.1245 Acc: 0.6668 Val Loss: 1.1983 Val Acc: 0.6408
+2018-10-11 15:33:21,338 - __main__ - INFO - Seed: 
+
+Harry saw Hermione check
+2018-10-11 15:33:21,338 - __main__ - INFO - Target: 
+ing that she still had the 
+beaded bag, and hurriedly thrust his own hand under 
+his jacket to make 
+2018-10-11 15:33:24,034 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ed 
+the corridor and started 
+therefore to tell him the 
+students were still and saw 
+that he was st
+2018-10-11 15:33:26,732 - __main__ - INFO - Temperature: 0.2, Generated text: 
+anding on the 
+end of the class of her students 
+and started to talk about the 
+end of the candlelig
+2018-10-11 15:33:29,392 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ht to the 
+way of her face in the room in the common room. 
+
+“You see, that’s what was a 
+great day 
+2018-10-11 15:33:32,059 - __main__ - INFO - Temperature: 0.6, Generated text: 
+of shapes on her 
+feet. 
+
+“This has a good to tell me what 
+he was about to about the 
+table to kill
+2018-10-11 15:33:34,715 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ him goes for sentence 
+across the choice for a room had manened those Gryffindor 
+candlety and publ
+2018-10-11 15:33:37,380 - __main__ - INFO - Temperature: 1.0, Generated text: 
+icsing in a stunn higher 
+and had auntered in their air, then; then his 
+voice spectacle looked down
+2018-10-11 15:33:40,018 - __main__ - INFO - Temperature: 1.2, Generated text: 
+...” 
+
+“But that Snape talk to Professor Trelawney On the Imperius. As never made an insides atteast
+2018-10-11 15:33:44,686 - __main__ - INFO - ----------Iteration 41 out of 200----------
+2018-10-11 15:38:35,803 - __main__ - INFO - Loss: 1.1222 Acc: 0.6676 Val Loss: 1.1352 Val Acc: 0.6654
+2018-10-11 15:38:35,926 - __main__ - INFO - Seed: 
+d I thought it common pol
+2018-10-11 15:38:35,926 - __main__ - INFO - Target: 
+iteness 
+to meet her. I was disappointed. It seemed to me that 
+she had not a trace of the gift hers
+2018-10-11 15:38:38,613 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ite 
+of the library to his feet, 
+and the office of the library 
+and saw that he was standing on the
+2018-10-11 15:38:41,277 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ 
+last time the thoughts had 
+the only one of the surface of the 
+painted of the lake and saw him a 
+2018-10-11 15:38:43,950 - __main__ - INFO - Temperature: 0.4, Generated text: 
+
+desk behind him. 
+
+“I didn’t want to see you around to have to have 
+the only and which he was had 
+2018-10-11 15:38:46,605 - __main__ - INFO - Temperature: 0.6, Generated text: 
+
+not pass a couple of heard fire and set off, and 
+was the careat was like a common 
+Leether with Ha
+2018-10-11 15:38:49,269 - __main__ - INFO - Temperature: 0.8, Generated text: 
+rry? He had just 
+away, which the alcares careers.” 
+
+Harry remembered of Snape 
+quite against the r
+2018-10-11 15:38:51,922 - __main__ - INFO - Temperature: 1.0, Generated text: 
+oom, looking over at all, immensive he 
+could have gone into a swille. They was drinking 
+up at all,
+2018-10-11 15:38:54,578 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ letent elmos The necks firemal jow deserved, ratherified 
+anitolf Dumbledore tunned by Charge... 
+
+
+2018-10-11 15:38:59,226 - __main__ - INFO - ----------Iteration 42 out of 200----------
+2018-10-11 15:43:50,314 - __main__ - INFO - Loss: 1.1722 Acc: 0.6592 Val Loss: 1.2238 Val Acc: 0.6377
+2018-10-11 15:43:50,432 - __main__ - INFO - Seed: 
+n a 
+line. 
+
+“Snape’s,” s
+2018-10-11 15:43:50,432 - __main__ - INFO - Target: 
+aid Harry. “What do we have to do?” 
+
+They stepped over the threshold, and immediately a 
+fire spran
+2018-10-11 15:43:53,111 - __main__ - INFO - Temperature: 0.01, Generated text: 
+aid Hagrid quietly. 
+
+“I don’t know what they were 
+still that he was still fine, 
+Hagrid was still 
+2018-10-11 15:43:55,777 - __main__ - INFO - Temperature: 0.2, Generated text: 
+at the fireplace 
+of the fireplace of the stairs of the 
+forest. 
+
+“I don’t know,” said Hagrid, 
+sti
+2018-10-11 15:43:58,432 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ll as though he could see the way of the weaky’s 
+face with a broom and the 
+parchment the wand and 
+2018-10-11 15:44:01,100 - __main__ - INFO - Temperature: 0.6, Generated text: 
+give 
+them starting over to the 
+others, when Harry had the 
+trees of 
+
+
+Weasley would look pretendi
+2018-10-11 15:44:03,755 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ng to be 
+over 
+the stairs... 
+
+
+
+Black and Ron seemed to defun in a hurr of well. 
+
+
+
+Page | 886Har
+2018-10-11 15:44:06,425 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ry Potter and the Order of the Phoenix - J.K. Rowling 
+
+
+
+
+laughings. 
+
+“I had I mign’ his librity b
+2018-10-11 15:44:09,075 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ring out a cloud and took their waistcown... If we don’ I couldn’t be great rrash.. Umbridging was e
+2018-10-11 15:44:13,715 - __main__ - INFO - ----------Iteration 43 out of 200----------
+2018-10-11 15:49:04,805 - __main__ - INFO - Loss: 1.1023 Acc: 0.6712 Val Loss: 1.1423 Val Acc: 0.6532
+2018-10-11 15:49:04,932 - __main__ - INFO - Seed: 
+yes, and 
+the thing he re
+2018-10-11 15:49:04,932 - __main__ - INFO - Target: 
+ally wanted to know spilled out of his 
+mouth before he could stop it. 
+
+“What made you think he’d r
+2018-10-11 15:49:07,731 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ached the 
+sign of the corridor and 
+the students were still as though he had 
+the only one was stil
+2018-10-11 15:49:10,474 - __main__ - INFO - Temperature: 0.2, Generated text: 
+l and 
+saw that he had been there 
+with a sundating students and the 
+students were all the way with
+2018-10-11 15:49:13,164 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ his wand against the 
+door of the way, which was 
+his back on the floor and saw that 
+the horses of
+2018-10-11 15:49:15,834 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ whatever he was coming, it’s only it because Trelawney for the 
+Arease to watch their way from 
+her
+2018-10-11 15:49:18,506 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ head against Harry’s face and on the fast as 
+Harry had been was still swelling by the ” 
+
+“I don’t
+2018-10-11 15:49:21,181 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ know’!” said Hermione coldly, who had put away from around much 
+heads of his theshour way away in 
+2018-10-11 15:49:23,852 - __main__ - INFO - Temperature: 1.2, Generated text: 
+this in the svoulder,” said Grawp, hurried willingly ahar?” Harry asked Umbridge, but Headmighn was 
+2018-10-11 15:49:28,505 - __main__ - INFO - ----------Iteration 44 out of 200----------
+2018-10-11 15:54:19,500 - __main__ - INFO - Loss: 1.1025 Acc: 0.6757 Val Loss: 1.1893 Val Acc: 0.6546
+2018-10-11 15:54:19,622 - __main__ - INFO - Seed: 
+uit yourselves. But I som
+2018-10-11 15:54:19,622 - __main__ - INFO - Target: 
+etimes think Ron’s mum’s 
+right, and Sirius gets confused about whether you’re 
+you or your father, 
+2018-10-11 15:54:22,293 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ething 
+speaking the steps and still 
+still as the steps were still 
+still still as the steps 
+was s
+2018-10-11 15:54:24,964 - __main__ - INFO - Temperature: 0.2, Generated text: 
+till glass spells and 
+sprinted and said, “Harry, I don’t know what he had 
+all right on the floor. 
+2018-10-11 15:54:27,637 - __main__ - INFO - Temperature: 0.4, Generated text: 
+
+
+“Harry, I don’t want to get 
+to the others. 
+
+“It was a wrong more matter 
+behind the floor. 
+
+“Wh
+2018-10-11 15:54:30,320 - __main__ - INFO - Temperature: 0.6, Generated text: 
+at was the here,” said Dumbledore, who had seized 
+Neville’s chest; he could not hear one of the 
+de
+2018-10-11 15:54:32,986 - __main__ - INFO - Temperature: 0.8, Generated text: 
+sk to his face at the room. 
+
+“Well, you have done to force it here, that Harry is hidden. The 
+othe
+2018-10-11 15:54:35,636 - __main__ - INFO - Temperature: 1.0, Generated text: 
+r black steps back from the Inhlabsad’s wais had on the 
+door. Harry stared at the dark floor of 
+wh
+2018-10-11 15:54:38,280 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ich Hermione jumped over their tables air, “mulct time, Weasley, drelling a screepyly light after 
+t
+2018-10-11 15:54:42,944 - __main__ - INFO - ----------Iteration 45 out of 200----------
+2018-10-11 15:59:34,047 - __main__ - INFO - Loss: 1.1436 Acc: 0.6611 Val Loss: 1.2357 Val Acc: 0.6357
+2018-10-11 15:59:34,169 - __main__ - INFO - Seed: 
+ was watching the Room of
+2018-10-11 15:59:34,169 - __main__ - INFO - Target: 
+ Requirement 
+with Ginny and Neville,” said Harry, turning to 
+Hermione, “were you — ?” 
+
+“Outside S
+2018-10-11 15:59:36,848 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ 
+Malfoy, and Hermione was 
+still being and said that he was 
+sure to see the sun was that 
+the prop
+2018-10-11 15:59:39,544 - __main__ - INFO - Temperature: 0.2, Generated text: 
+hecy was not to say 
+that he was sure that he was 
+sure to have to say that he was 
+and anything to 
+2018-10-11 15:59:42,195 - __main__ - INFO - Temperature: 0.4, Generated text: 
+see the way to see 
+your eyes and too make my 
+presence on the moment in the 
+Prime Minister, and th
+2018-10-11 15:59:44,870 - __main__ - INFO - Temperature: 0.6, Generated text: 
+e sun was bearing 
+and really think the country 
+Bells of the sun now to talk to the 
+Prime Minister
+2018-10-11 15:59:47,547 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ Weasley. 
+
+“Yes, well, she was — what’s 
+not a truca where Mrs. Weasley was than 
+Ron’s face with h
+2018-10-11 15:59:50,210 - __main__ - INFO - Temperature: 1.0, Generated text: 
+im, Pigwidgeon invided 
+trying to see Ron, and You-mind’s. It’s alarming in his attacked. 
+
+He had t
+2018-10-11 15:59:52,898 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ried to seacieve Normal 
+Lord hat how compley — and that Vungo’s lap. 
+Weive he killed his suggint. 
+2018-10-11 15:59:57,570 - __main__ - INFO - ----------Iteration 46 out of 200----------
+2018-10-11 16:04:48,859 - __main__ - INFO - Loss: 1.1598 Acc: 0.6583 Val Loss: 1.2472 Val Acc: 0.6409
+2018-10-11 16:04:48,986 - __main__ - INFO - Seed: 
+ her left nostril. 
+
+
+
+Pa
+2018-10-11 16:04:48,986 - __main__ - INFO - Target: 
+ge | 645Harry Potter and the Order of the Phoenix - J.K. Rowling 
+
+
+
+
+“Family argument, eh?” smirked
+2018-10-11 16:04:51,663 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ge | 24 Harry Potter and the Half Blood Prince - J.K. Rowling 
+
+
+
+
+“I was not to say, I was a 
+momen
+2018-10-11 16:04:54,337 - __main__ - INFO - Temperature: 0.2, Generated text: 
+t that he had seen the 
+moment that he had sent the 
+prophecy when he had seen the 
+prophecy when he
+2018-10-11 16:04:56,991 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ was a house-elf tight and 
+set off his face to the Death Eaters of 
+the foot of the wands of 
+the D
+2018-10-11 16:04:59,675 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ursleys and the Dursleys around him more than a few seconds there were 
+waiting for a moment that he
+2018-10-11 16:05:02,340 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ thought I had to sat 
+away from his bottle, and 
+which is it with the Dark Lord. 
+
+Narcissa lost ou
+2018-10-11 16:05:04,992 - __main__ - INFO - Temperature: 1.0, Generated text: 
+tside his wand in 
+door. 
+
+“I mean, that’s the mirror,” he gone, this 
+pleased by Kreacher had told 
+2018-10-11 16:05:07,656 - __main__ - INFO - Temperature: 1.2, Generated text: 
+him. Nearby, imin. Nice 
+you may cist jointing. 
+
+“Oh do you want very points were to gaze 
+into col
+2018-10-11 16:05:12,326 - __main__ - INFO - ----------Iteration 47 out of 200----------
+2018-10-11 16:10:03,359 - __main__ - INFO - Loss: 1.1627 Acc: 0.659 Val Loss: 1.1602 Val Acc: 0.6617
+2018-10-11 16:10:03,481 - __main__ - INFO - Seed: 
+ness: He was half buried 
+2018-10-11 16:10:03,481 - __main__ - INFO - Target: 
+in the wreckage of 
+a corridor that had been subjected to a terrible 
+attack. Cold air told him that
+2018-10-11 16:10:06,141 - __main__ - INFO - Temperature: 0.01, Generated text: 
+to 
+the shop. 
+
+“I don’t know why the Dark Arts 
+supposed to stand to the 
+shop. 
+
+“I don’t know why
+2018-10-11 16:10:08,819 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ you’d better get 
+to the Ministry of Magic 
+and Mrs. Weasley and Hermione 
+strode over the stop beh
+2018-10-11 16:10:11,503 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ind the shop. 
+
+“So we’ll be able to be stupid as 
+he looked around to his stomach and 
+trying to st
+2018-10-11 16:10:14,158 - __main__ - INFO - Temperature: 0.6, Generated text: 
+eal to his wand 
+dropped as he strode over the room. 
+
+“Can you know. Why don’t you know he 
+still g
+2018-10-11 16:10:16,809 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ot hours of glance with the long-gentil and 
+did she had the cabinet she stacked the end, 
+his heart
+2018-10-11 16:10:19,474 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ looking both ace 
+flashed and flep through advantave 
+pollows when said an attention everyone out!”
+2018-10-11 16:10:22,111 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ 
+
+“Something.” 
+
+Tommry quick. “What about Slophing 
+importances. Thoughffrisangy failing iten 
+hif
+2018-10-11 16:10:26,751 - __main__ - INFO - ----------Iteration 48 out of 200----------
+2018-10-11 16:15:17,914 - __main__ - INFO - Loss: 1.1695 Acc: 0.6621 Val Loss: 1.3861 Val Acc: 0.6325
+2018-10-11 16:15:18,042 - __main__ - INFO - Seed: 
+r! 
+Detention for all of 
+2018-10-11 16:15:18,042 - __main__ - INFO - Target: 
+you, and fifty points from 
+Slytherin! I shall be speaking to Professor 
+Dumbledore about this, make
+2018-10-11 16:15:20,719 - __main__ - INFO - Temperature: 0.01, Generated text: 
+the 
+Page | 186 Harry Potter and the Half%fflent Charms 
+with *abini; and she had 
+surely still stil
+2018-10-11 16:15:23,385 - __main__ - INFO - Temperature: 0.2, Generated text: 
+l bentions on his 
+shoulder and set off to the 
+corridor on the station of the 
+Page | 187 Harry Pot
+2018-10-11 16:15:26,034 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ter and the Half*fflofness 
+wall, and%ore to see any of 
+the way on the street and the 
+one of the D
+2018-10-11 16:15:28,687 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ark Arts job, and the spells, 
+
+Page | 177 Harry Potter and the Half%fflofnawup of 
+Slugh*rie and th
+2018-10-11 16:15:31,400 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ere. 
+
+well, particularly headmaster to be 
+happy for a dark scarles 
+was faltorally bedond this 
+em
+2018-10-11 16:15:34,075 - __main__ - INFO - Temperature: 1.0, Generated text: 
+parre and beaming his entirely hand, but he pressed the 
+windows. 
+
+“So there’s follower from brike 
+2018-10-11 16:15:36,740 - __main__ - INFO - Temperature: 1.2, Generated text: 
+the 
+colored break sithing book, anti-Doloedew anftt-noushing remained disappointed wey Cheers, howe
+2018-10-11 16:15:41,419 - __main__ - INFO - ----------Iteration 49 out of 200----------
+2018-10-11 16:20:32,747 - __main__ - INFO - Loss: 1.1704 Acc: 0.6608 Val Loss: 1.2094 Val Acc: 0.6526
+2018-10-11 16:20:32,873 - __main__ - INFO - Seed: 
+ean’s instant 
+dismissal 
+2018-10-11 16:20:32,873 - __main__ - INFO - Target: 
+from the team. 
+
+“Er ... c’mon, Ginny,” said Dean, “let’s go back to the 
+common room. ...” 
+
+“You g
+2018-10-11 16:20:35,581 - __main__ - INFO - Temperature: 0.01, Generated text: 
+than the start of the 
+station of the corner of the 
+station of the corner of the 
+station of the co
+2018-10-11 16:20:38,220 - __main__ - INFO - Temperature: 0.2, Generated text: 
+rner of the 
+station of the table and 
+said that he was standing at the station of the 
+station of t
+2018-10-11 16:20:40,918 - __main__ - INFO - Temperature: 0.4, Generated text: 
+he new of the parcel 
+was saying that he was starting to 
+watch the back of Harry’s 
+hand. 
+
+“I don’
+2018-10-11 16:20:43,585 - __main__ - INFO - Temperature: 0.6, Generated text: 
+t know what I saw her 
+about it, he was holding 
+on his head. 
+
+“I shall be ready to see 
+the standa
+2018-10-11 16:20:46,226 - __main__ - INFO - Temperature: 0.8, Generated text: 
+rd on the forefess of the rest of the case final 
+man of his sight of sight of 
+rather hands. This i
+2018-10-11 16:20:48,880 - __main__ - INFO - Temperature: 1.0, Generated text: 
+s what she 
+had low>red, hastily, and he wondered from 
+his shoulder, but he raven 
+one of the windo
+2018-10-11 16:20:51,536 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ws tellings off her instruments of a second, he wondered up. ” 
+
+Ron never been up routed to go at 
+
+2018-10-11 16:20:56,195 - __main__ - INFO - ----------Iteration 50 out of 200----------
+2018-10-11 16:25:47,351 - __main__ - INFO - Loss: 1.1508 Acc: 0.6581 Val Loss: 1.2045 Val Acc: 0.655
+2018-10-11 16:25:47,487 - __main__ - INFO - Seed: 
+es in print.” 
+
+
+
+Page | 
+2018-10-11 16:25:47,487 - __main__ - INFO - Target: 
+725Harry Potter and the Order of the Phoenix - J.K. Rowling 
+
+
+
+
+Rita Skeeter looked as though the t
+2018-10-11 16:25:50,151 - __main__ - INFO - Temperature: 0.01, Generated text: 
+301 Harry Potter and the Half Blood Prince - J.K. Rowling 
+
+
+
+
+“There was a school of the 
+started b
+2018-10-11 16:25:52,818 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ox was a small smile 
+of the pod and the room was 
+still staring at the corridor, and the 
+students 
+2018-10-11 16:25:55,501 - __main__ - INFO - Temperature: 0.4, Generated text: 
+were sitting on the corridor, 
+which he was staring at him, 
+snatching his head and seriously 
+from 
+2018-10-11 16:25:58,160 - __main__ - INFO - Temperature: 0.6, Generated text: 
+a clear and she was although he 
+said it was a sudden waze and 
+really was starting now, when he was
+2018-10-11 16:26:00,826 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ not 
+giving them on the pidicul of Hermione’s fat look 
+her wand, but the hole they stopped too. 
+
+
+2018-10-11 16:26:03,520 - __main__ - INFO - Temperature: 1.0, Generated text: 
+“Don’t you’ve got a moment’s 
+simple tended and mood shot at 
+a loud ancriously straighten about Sly
+2018-10-11 16:26:06,216 - __main__ - INFO - Temperature: 1.2, Generated text: 
+therins feeling 
+in herself grew there and 
+gour, and everozord Sirius raised 
+to rough worried to s
+2018-10-11 16:26:10,930 - __main__ - INFO - ----------Iteration 51 out of 200----------
+2018-10-11 16:31:02,533 - __main__ - INFO - Loss: 1.1352 Acc: 0.6646 Val Loss: 1.2043 Val Acc: 0.6475
+2018-10-11 16:31:02,661 - __main__ - INFO - Seed: 
+t they 
+had reached the e
+2018-10-11 16:31:02,663 - __main__ - INFO - Target: 
+dge of the forest. 
+
+“Stop.” 
+
+Page | 824 Harry Potter and the Deathly Hallows - J.K. Rowling 
+
+
+
+
+H
+2018-10-11 16:31:05,325 - __main__ - INFO - Temperature: 0.01, Generated text: 
+xtremely 
+and the product of the table and 
+said the start of the staff. 
+
+“I don’t know what you ar
+2018-10-11 16:31:08,013 - __main__ - INFO - Temperature: 0.2, Generated text: 
+e all 
+the truth of the prophecy 
+who had been a spell of the 
+man who had already had the 
+common r
+2018-10-11 16:31:10,717 - __main__ - INFO - Temperature: 0.4, Generated text: 
+oom with the time what had 
+promised the spells and shouted the 
+expression of the corridor and 
+sai
+2018-10-11 16:31:13,391 - __main__ - INFO - Temperature: 0.6, Generated text: 
+d both of a time in and 
+You are already did it, so 
+he was found the ward to 
+look at the last of t
+2018-10-11 16:31:16,089 - __main__ - INFO - Temperature: 0.8, Generated text: 
+he room, 
+“Parsessed Horkmeak Riddle confided and happened, looking as 
+though; a good bat of fight 
+2018-10-11 16:31:18,740 - __main__ - INFO - Temperature: 1.0, Generated text: 
+and he 
+did not seem to be arriving, 
+pretending to the group to Mrs. Weasley’s Hagrified 
+glots, al
+2018-10-11 16:31:21,410 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ready. Fulb of necklace, recearfos. 
+how really not Lee.. Gc M, Scrimgeour listens 
+up a cooken lumb
+2018-10-11 16:31:26,259 - __main__ - INFO - ----------Iteration 52 out of 200----------
+2018-10-11 16:36:18,620 - __main__ - INFO - Loss: 1.1449 Acc: 0.6636 Val Loss: 1.1858 Val Acc: 0.6579
+2018-10-11 16:36:18,737 - __main__ - INFO - Seed: 
+nd the rest of the team l
+2018-10-11 16:36:18,738 - __main__ - INFO - Target: 
+ed the way, still 
+in their scarlet robes, out of the stadium and back up 
+to the castle. 
+
+
+
+It fel
+2018-10-11 16:36:21,426 - __main__ - INFO - Temperature: 0.01, Generated text: 
+eaves 
+and stared at the staircase 
+of the story with his head and 
+stared at the staircase of the 
+
+2018-10-11 16:36:24,126 - __main__ - INFO - Temperature: 0.2, Generated text: 
+boxes of the top of the top of the 
+forest the staircase that 
+he had not seen that the 
+Slytherin s
+2018-10-11 16:36:26,944 - __main__ - INFO - Temperature: 0.4, Generated text: 
+eemed to get the 
+position to be the time the 
+Slytherin potion was a good 
+feeling where he said it
+2018-10-11 16:36:29,604 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ was alone, she had not 
+looked as though he was deading beside his head and then she had many 
+mind
+2018-10-11 16:36:32,273 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ on the common room, 
+moving and getting a long 
+match, however, oher-are all shouted, common reason
+2018-10-11 16:36:34,979 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ looking 
+at once, not full of silence for the implaiiasly stop 
+how appeared for the things of 
+Hep
+2018-10-11 16:36:37,651 - __main__ - INFO - Temperature: 1.2, Generated text: 
+zibah people in his hand. 
+
+fealing to Dumbledore’s became waysobed. 
+Sh ext?” 
+
+“Coobs ... well, Ho
+2018-10-11 16:36:42,505 - __main__ - INFO - ----------Iteration 53 out of 200----------
+2018-10-11 16:41:36,980 - __main__ - INFO - Loss: 1.5125 Acc: 0.6513 Val Loss: 1.7672 Val Acc: 0.6045
+2018-10-11 16:41:37,098 - __main__ - INFO - Seed: 
+med it onto his head and 
+2018-10-11 16:41:37,099 - __main__ - INFO - Target: 
+threw 
+himself flat onto the floor as the basilisk’s tail swung 
+over him again. 
+
+Page | 355 Harry 
+2018-10-11 16:41:39,948 - __main__ - INFO - Temperature: 0.01, Generated text: 
+
+strode off the corner of the Zdiends of 
+the corner of ZarrZan Slughorn 
+and his eyes and starting 
+2018-10-11 16:41:42,740 - __main__ - INFO - Temperature: 0.2, Generated text: 
+at him. Zer-walking 
+stream of the stairs and 
+said, “I don’t know what hZ’Z 
+saiZ the soul was the 
+2018-10-11 16:41:45,487 - __main__ - INFO - Temperature: 0.4, Generated text: 
+only one 
+had been such a lo*g class and said 
+Harry, “I can start that 
+wilZ?” 
+
+“It’s been surpris
+2018-10-11 16:41:48,202 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ed it is from 
+the corner of his friends were still the moment Zridgen on the way, 
+
+but thZ shoppin
+2018-10-11 16:41:50,928 - __main__ - INFO - Temperature: 0.8, Generated text: 
+g of Zun tone the 
+made sneakings are to do th'ir 
+advantment thanZves and pu&loving in 
+his wand; h
+2018-10-11 16:41:53,704 - __main__ - INFO - Temperature: 1.0, Generated text: 
+is empty hand turned Zormilf les*noonless past. “Bs twice.” 
+
+They caught, but wanting oheZ 
+enter?”
+2018-10-11 16:41:56,434 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ said Harry, watching him, pointing]ore; an, 
+him terrelier,” said Slughorn, 
+his eyes lyvisteredly.
+2018-10-11 16:42:01,522 - __main__ - INFO - ----------Iteration 54 out of 200----------
+2018-10-11 16:46:55,509 - __main__ - INFO - Loss: 2.7413 Acc: 0.5951 Val Loss: 1.1309 Val Acc: 0.6669
+2018-10-11 16:46:55,642 - __main__ - INFO - Seed: 
+ghorn had lent him. 
+
+To 
+2018-10-11 16:46:55,643 - __main__ - INFO - Target: 
+his annoyance he saw that the previous owner had 
+scribbled all over the pages, so that the margins 
+2018-10-11 16:46:58,423 - __main__ - INFO - Temperature: 0.01, Generated text: 
+his wand at the corridors and 
+her face and staring at the 
+corner of his wand and staring at the 
+c
+2018-10-11 16:47:01,169 - __main__ - INFO - Temperature: 0.2, Generated text: 
+orner of the corridors and 
+half on the corridors of the 
+corridors of the corridors and 
+he was sta
+2018-10-11 16:47:03,992 - __main__ - INFO - Temperature: 0.4, Generated text: 
+nding at the corridors, 
+who was standing at the corner of the arming 
+stone warning at the parchmen
+2018-10-11 16:47:06,889 - __main__ - INFO - Temperature: 0.6, Generated text: 
+t, and he 
+had not liked in the boys’ evening. “But I think he has been banned a 
+spell socks, that 
+2018-10-11 16:47:09,682 - __main__ - INFO - Temperature: 0.8, Generated text: 
+there is 
+a job and you got? He was 
+not and his tee rishing face and grass?” 
+
+“Is Harry ” 
+
+“There
+2018-10-11 16:47:12,639 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ are you, would you wook out in his wand, 
+and Harry flung himself familiar uncontrolled tongure. Ha
+2018-10-11 16:47:15,445 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ve getting 
+of it.” 
+
+“And then I don’t have you without practiced I can have much therea, Dumbledor
+2018-10-11 16:47:20,506 - __main__ - INFO - ----------Iteration 55 out of 200----------
+2018-10-11 16:52:14,097 - __main__ - INFO - Loss: 1.0954 Acc: 0.6753 Val Loss: 1.1057 Val Acc: 0.6677
+2018-10-11 16:52:14,215 - __main__ - INFO - Seed: 
+
+
+
+
+“I think,” he said sl
+2018-10-11 16:52:14,217 - __main__ - INFO - Target: 
+owly, “he’s got something to do 
+with Quidditch. There’s some connection, but I can’t 
+— I can’t thi
+2018-10-11 16:52:16,927 - __main__ - INFO - Temperature: 0.01, Generated text: 
+owly. “I 
+want to kill me, I don’t know what he was 
+still still staring at him 
+and saw the stairs 
+2018-10-11 16:52:19,690 - __main__ - INFO - Temperature: 0.2, Generated text: 
+were still 
+staring at him and the stairs were 
+still staring at him and 
+showed him and the school 
+2018-10-11 16:52:22,423 - __main__ - INFO - Temperature: 0.4, Generated text: 
+
+was now standing back into his face. 
+
+“Sir, Harry, I can’t come back to the 
+fact, staring at him 
+2018-10-11 16:52:25,090 - __main__ - INFO - Temperature: 0.6, Generated text: 
+and staring at him, 
+killed him. 
+
+“We can start!” said Dumbledore. 
+
+“No, Harry,” muttered Malfoy. 
+2018-10-11 16:52:27,859 - __main__ - INFO - Temperature: 0.8, Generated text: 
+
+
+“I ’t — couldn’t you be dead 
+think I kill come. ... I think he from good 
+Death Eaters,” said Dum
+2018-10-11 16:52:30,557 - __main__ - INFO - Temperature: 1.0, Generated text: 
+bledore. “But when you 
+started, Professor Dumbledore ... a charm to sneer the imprisoned and his fa
+2018-10-11 16:52:33,262 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ce was appreasing. On, it had gave game?” 
+
+“Who dettings over the Invisibility Cloak, Snape’s 
+unum
+2018-10-11 16:52:38,146 - __main__ - INFO - ----------Iteration 56 out of 200----------
+2018-10-11 16:57:31,206 - __main__ - INFO - Loss: 1.3163 Acc: 0.6416 Val Loss: 1.3891 Val Acc: 0.6438
+2018-10-11 16:57:31,340 - __main__ - INFO - Seed: 
+There was a gap 
+right in
+2018-10-11 16:57:31,341 - __main__ - INFO - Target: 
+ front of them: the entrance to the vast maze. 
+The passage beyond it looked dark and creepy. 
+
+Page
+2018-10-11 16:57:34,097 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ the front doors and 
+stroke at the start of the 
+Ministry of Magic and the 
+strange of the floor wi
+2018-10-11 16:57:36,804 - __main__ - INFO - Temperature: 0.2, Generated text: 
+th a 
+high and straight as he stared at him. 
+
+“I think that the many time he had 
+the subsity to th
+2018-10-11 16:57:39,498 - __main__ - INFO - Temperature: 0.4, Generated text: 
+e trees 
+again, and the stars of the 
+greatest lights of the many 
+little discovering for a moment t
+2018-10-11 16:57:42,197 - __main__ - INFO - Temperature: 0.6, Generated text: 
+he fact last man closed to me, 
+and she was the hidder that light mentioned the dark indeed. 
+
+“You 
+2018-10-11 16:57:44,959 - __main__ - INFO - Temperature: 0.8, Generated text: 
+like to the Diagon Hall 
+Magical Mackilyance*’s spell Lucius 
+“Accoups it was glad to take that it w
+2018-10-11 16:57:47,635 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ith invisible, 
+blinding the disturbance in a long table continued. “No cureer of arrime I’ve melded
+2018-10-11 16:57:50,339 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ 
+not to be saking carry but fitted in puped under the 
+
+Higardg’ Dings, but on foZest 
+place with h
+2018-10-11 16:57:55,245 - __main__ - INFO - ----------Iteration 57 out of 200----------
+2018-10-11 17:02:48,214 - __main__ - INFO - Loss: 1.302 Acc: 0.6544 Val Loss: 1.3738 Val Acc: 0.6351
+2018-10-11 17:02:48,356 - __main__ - INFO - Seed: 
+s way to the stool. 
+The 
+2018-10-11 17:02:48,357 - __main__ - INFO - Target: 
+hat took a long time to decide with Neville. When 
+it finally shouted, “GRYFFINDOR,” Neville ran off
+2018-10-11 17:02:51,042 - __main__ - INFO - Temperature: 0.01, Generated text: 
+sidecar was still standing at the 
+sidecar and saw the sidecar and 
+started to the sidecar and 
+star
+2018-10-11 17:02:53,699 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ted to the sidecar and 
+started. 
+
+“We’re going to be able to be still that 
+they were still still s
+2018-10-11 17:02:56,352 - __main__ - INFO - Temperature: 0.4, Generated text: 
+tanding to 
+see it in the place. 
+
+“I didn’t know what happened to the 
+book and a short silver; he 
+2018-10-11 17:02:59,035 - __main__ - INFO - Temperature: 0.6, Generated text: 
+
+saw them to be on the blood. They 
+were still in the back of the darkness, 
+who had been shotion th
+2018-10-11 17:03:01,688 - __main__ - INFO - Temperature: 0.8, Generated text: 
+e wearing a 
+broomstick had been his fake few patically. There was a flast of flood against the sigh
+2018-10-11 17:03:04,339 - __main__ - INFO - Temperature: 1.0, Generated text: 
+t of 
+sight and I’d still take you, moet just 
+yet it’s fine. He did not want to 
+Mrs. Xilling ir. 
+
+2018-10-11 17:03:06,990 - __main__ - INFO - Temperature: 1.2, Generated text: 
+
+It is dlaven, my offers, good point, undoubtedly flying 
+shut over Ron’s ears holding his 
+right ti
+2018-10-11 17:03:11,757 - __main__ - INFO - ----------Iteration 58 out of 200----------
+2018-10-11 17:08:02,825 - __main__ - INFO - Loss: 1.3411 Acc: 0.6456 Val Loss: 1.3702 Val Acc: 0.6351
+2018-10-11 17:08:02,956 - __main__ - INFO - Seed: 
+a 
+week before the end of
+2018-10-11 17:08:02,956 - __main__ - INFO - Target: 
+ term. Harry was practicing 
+hexes at every available moment. He felt more 
+confident about this tas
+2018-10-11 17:08:05,608 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ the 
+present of the sight of the 
+sight of the sight of the 
+sight of the sight of the 
+sight of th
+2018-10-11 17:08:08,260 - __main__ - INFO - Temperature: 0.2, Generated text: 
+e sight of the 
+parcient of the back of the 
+first time the sight of the 
+distant side of the first 
+2018-10-11 17:08:10,920 - __main__ - INFO - Temperature: 0.4, Generated text: 
+time the 
+passing time a familiar of 
+the sight of the open and still held a 
+face in the marble sid
+2018-10-11 17:08:13,605 - __main__ - INFO - Temperature: 0.6, Generated text: 
+e of the call of the table.” 
+
+Harry saw a large cage. HZ had the information frZwes 
+about the tabl
+2018-10-11 17:08:16,264 - __main__ - INFO - Temperature: 0.8, Generated text: 
+e, and the view 
+had made a much of resulter. 
+
+“I thought up, Hermione?” he 
+whispered.Zhation thin
+2018-10-11 17:08:18,938 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ with Ron, and Hermione had looking sideZ, he 
+wondered my copy of Ariana dormed shat with a liviar 
+2018-10-11 17:08:21,611 - __main__ - INFO - Temperature: 1.2, Generated text: 
+tribute sheet, Mugges 
+was frighten Apprehe wad, it’s like Hermione 
+ourst. “They ma%r.” 
+
+“Not to i
+2018-10-11 17:08:26,360 - __main__ - INFO - ----------Iteration 59 out of 200----------
+2018-10-11 17:13:17,423 - __main__ - INFO - Loss: 1.2664 Acc: 0.6574 Val Loss: 1.3545 Val Acc: 0.6348
+2018-10-11 17:13:17,553 - __main__ - INFO - Seed: 
+ast. 
+
+“Harry, the time f
+2018-10-11 17:13:17,554 - __main__ - INFO - Target: 
+or Disarming is past! These people 
+are trying to capture and kill you! At least Stun if you 
+aren’t
+2018-10-11 17:13:20,221 - __main__ - INFO - Temperature: 0.01, Generated text: 
+or you tZ 
+protect the Death Eaters 
+and the Death Eaters and 
+the same silence that he had 
+been a 
+2018-10-11 17:13:22,869 - __main__ - INFO - Temperature: 0.2, Generated text: 
+chance of the Death Eaters 
+and the way on the floor, and 
+the soft of the stairs and 
+said, “What a
+2018-10-11 17:13:25,501 - __main__ - INFO - Temperature: 0.4, Generated text: 
+bout the Dark Lord, and then he 
+came to the dark, protecting 
+reading what had been cold. 
+
+“And th
+2018-10-11 17:13:28,153 - __main__ - INFO - Temperature: 0.6, Generated text: 
+en make a little load that he looked 
+around at the taplet Ron 
+and Hermione straightened 
+ofZ the p
+2018-10-11 17:13:30,809 - __main__ - INFO - Temperature: 0.8, Generated text: 
+lace and prisoning her and the side of 
+your present!” 
+
+“You track what you know what 
+looked as th
+2018-10-11 17:13:33,442 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ey gazed outside. Harry knew Dumbledore cou%t 
+my witch meny’ol’s just along the point, and she did 
+2018-10-11 17:13:36,133 - __main__ - INFO - Temperature: 1.2, Generated text: 
+not fight from 
+which forward, to perhaps Hermione, Harry sudding oZ, KreacheZ 
+looked here now, tri
+2018-10-11 17:13:40,896 - __main__ - INFO - ----------Iteration 60 out of 200----------
+2018-10-11 17:18:31,984 - __main__ - INFO - Loss: 1.315 Acc: 0.6507 Val Loss: 1.3743 Val Acc: 0.6438
+2018-10-11 17:18:32,111 - __main__ - INFO - Seed: 
+ 
+A House in which they m
+2018-10-11 17:18:32,111 - __main__ - INFO - Target: 
+ight 
+Take only those they wanted, so, 
+
+For instance, Slytherin 
+Took only pure-blood wizards 
+Of g
+2018-10-11 17:18:34,781 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ade Zolley 
+and the lift was still staring at the 
+statue of the lift beside the 
+door, and the lift
+2018-10-11 17:18:37,438 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ was sure that the 
+contents of the lift with the 
+shock of the door, and he 
+was sure that he was s
+2018-10-11 17:18:40,097 - __main__ - INFO - Temperature: 0.4, Generated text: 
+till 
+supposed to be the wizard who was sure that they 
+had somewhere arrival of the 
+wizards wizard
+2018-10-11 17:18:42,778 - __main__ - INFO - Temperature: 0.6, Generated text: 
+s. 
+
+“The would stay a homent 
+complexing of the wizard to the lift gray bag, 
+Ron was caught of the
+2018-10-11 17:18:45,458 - __main__ - INFO - Temperature: 0.8, Generated text: 
+ corners of what he was wrong to 
+have come to me. How is a stuck in the 
+teZting blute moment their
+2018-10-11 17:18:48,127 - __main__ - INFO - Temperature: 1.0, Generated text: 
+ large had been able to be on the 
+door, grown over the ground. 
+
+She went on to be a noiming Charm.
+2018-10-11 17:18:50,810 - __main__ - INFO - Temperature: 1.2, Generated text: 
+ He did not up prated tili&cs; they had simply wide across her hand as he recounted to 
+coxn at long
+2018-10-11 17:18:55,551 - __main__ - INFO - ----------Iteration 61 out of 200----------
+2018-10-11 17:23:50,575 - __main__ - INFO - Loss: 1.2805 Acc: 0.6552 Val Loss: 1.3989 Val Acc: 0.6303
+2018-10-11 17:23:50,725 - __main__ - INFO - Seed: 
+front of him. 
+
+But the d
+2018-10-11 17:23:50,725 - __main__ - INFO - Target: 
+oor slid slowly open before Lupin could 
+reach it. 
+
+Standing in the doorway, illuminated by the shi
+2018-10-11 17:23:53,620 - __main__ - INFO - Temperature: 0.01, Generated text: 
+eath was still that the 
+statue was a statue of the 
+statue of the statue of the 
+statue of the stat
+2018-10-11 17:23:56,384 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ue of the 
+countryside was a statue of 
+silence of the stairs and 
+stood over the corners of 
+stairs
+2018-10-11 17:23:59,315 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ and the sword of the 
+thing and the photograph of 
+the pain with the slippery 
+of the last silence 
+2018-10-11 17:24:02,061 - __main__ - INFO - Temperature: 0.6, Generated text: 
+and her 
+hands looked at Harry. He 
+realized that XreacheX had been completely stopped to her hand i
+2018-10-11 17:24:04,761 - __main__ - INFO - Temperature: 0.8, Generated text: 
+n their tants 
+beating the spot, they were to have 
+lost snowy had made rage now, the only letters s
+2018-10-11 17:24:07,464 - __main__ - INFO - Temperature: 1.0, Generated text: 
+natched on a slowerg of pain, closer the wendless 
+away. Neckon Hermione was talking backXight into 
+2018-10-11 17:24:10,143 - __main__ - INFO - Temperature: 1.2, Generated text: 
+a side 
+and the scafflorer appearing sfows of Icadent 
+Foulthole. Contant by disarmoraligasy pllagin
+2018-10-11 17:24:14,859 - __main__ - INFO - ----------Iteration 62 out of 200----------
+2018-10-11 17:29:09,035 - __main__ - INFO - Loss: 1.4086 Acc: 0.6451 Val Loss: 1.6661 Val Acc: 0.6176
+2018-10-11 17:29:09,158 - __main__ - INFO - Seed: 
+re was a clang of metal a
+2018-10-11 17:29:09,158 - __main__ - INFO - Target: 
+nd a long, 
+drawn-out scream. Harry whirled around, slipping in 
+the snow, wand held ready to defend
+2018-10-11 17:29:11,858 - __main__ - INFO - Temperature: 0.01, Generated text: 
+nd Xattering the 
+snake on the snake and stared at the 
+snake and stared at the sword and 
+stared at
+2018-10-11 17:29:14,553 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ the sXake and seemed to 
+be still so so that he had 
+the sword was a surprise of 
+tXentyXtor and sa
+2018-10-11 17:29:17,247 - __main__ - INFO - Temperature: 0.4, Generated text: 
+w the sword and 
+said to Xother Xangling at the 
+thing to him. 
+
+“Well, it’s a chain of the 
+Page | 
+2018-10-11 17:29:19,941 - __main__ - INFO - Temperature: 0.6, Generated text: 
+412 Harry Potter and the DeatXly Hallows - J.K. Rowling 
+
+XeforXing the blaXket together to the 
+sea
+2018-10-11 17:29:22,623 - __main__ - INFO - Temperature: 0.8, Generated text: 
+k and interested to prepart it, the high.” 
+
+“That Busbed when he had ever done a 
+Xept but a black 
+2018-10-11 17:29:25,309 - __main__ - INFO - Temperature: 1.0, Generated text: 
+join shirt, or once that Harry was lotest and ill,X’ forXeto’s 
+power in the locket. “At 
+GXttumion 
+2018-10-11 17:29:27,978 - __main__ - INFO - Temperature: 1.2, Generated text: 
+’s voice, Hermione, glad. 
+
+“WouldnX’h take a locket I’ve never 
+expelsed rightly scar slightereds o
+2018-10-11 17:29:32,778 - __main__ - INFO - ----------Iteration 63 out of 200----------
+2018-10-11 17:34:35,366 - __main__ - INFO - Loss: 1.2469 Acc: 0.6563 Val Loss: 1.5664 Val Acc: 0.6302
+2018-10-11 17:34:35,534 - __main__ - INFO - Seed: 
+very word Dumbledore 
+spo
+2018-10-11 17:34:35,535 - __main__ - INFO - Target: 
+ke, wondering where Dumbledore and Harry had 
+been and why there had been injuries. 
+
+“I know how yo
+2018-10-11 17:34:38,530 - __main__ - INFO - Temperature: 0.01, Generated text: 
+ke toXight and the Hallows 
+was the story ofX theX? TXke 
+the story who was the stone when heXd tXbe
+2018-10-11 17:34:41,371 - __main__ - INFO - Temperature: 0.2, Generated text: 
+ 
+the storyX of the Mudblood 
+Charm that is the strain of the 
+Prophetion was the story of the 
+PagX
+2018-10-11 17:34:44,280 - __main__ - INFO - Temperature: 0.4, Generated text: 
+ | 493 Harry Potter and the DeatXly Hallows - J.K. Rowling 
+
+XenchXorth and HaXry who 
+were find out
+2018-10-11 17:34:47,172 - __main__ - INFO - Temperature: 0.6, Generated text: 
+ Xliss XenopXishs if you saw 
+your wand to acc the DXders 
+wXnebook, then the stirr in the 
+room of 
+2018-10-11 17:34:50,032 - __main__ - INFO - Temperature: 0.8, Generated text: 
+his own tent. “But Greyback coXtinue binds of Ron 
+mide her for his fearing that 
+people who used th
+2018-10-11 17:34:52,949 - __main__ - INFO - Temperature: 1.0, Generated text: 
+em. 
+
+But he hXltier his hand before scaroes foney Death Eater, and it’s okhany sikes in the middle 
+2018-10-11 17:34:55,873 - __main__ - INFO - Temperature: 1.2, Generated text: 
+of the darkness glow of Harry again, left yoX tryZ. 
+Which road now,” rongled laughtercre, Xenophili
+2018-10-11 17:35:01,145 - __main__ - INFO - ----------Iteration 64 out of 200----------
