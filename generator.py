@@ -15,7 +15,6 @@ _write_book = False
 _load_model = False
 encoding = "utf-8-sig"  # or utf-8
 
-
 import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -25,7 +24,6 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.info('-' * 20 + 'START OF RUN' + '-' * 20)
-
 
 # -*- coding: utf-8 -*-
 logger.info('Loading modules')
@@ -69,15 +67,12 @@ import glob
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
-
 if not _use_gpu:
     """Use gpu if you have many parameters in your model"""
     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
     print('Using cpu...')
 else:
     print('Using gpu...')
-
-
 
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))  # chdir(foldername(script_location))
@@ -89,8 +84,6 @@ for filename in os.listdir():
         raw_text += f.read()
 os.chdir('..')
 
-
-
 # Lower test data size
 #raw_text = raw_text[:int(1e6)]
 # Remove
@@ -99,8 +92,6 @@ os.chdir('..')
 raw_text = raw_text.replace('  ', '')  # Remove double spaces
 raw_text = raw_text.replace('\t', '')  # Remove tabs
 #raw_text = ' '.join(raw_text.split())  # Remove double spaces
-
-
 
 # create mapping of unique chars to integers, and a reverse mapping
 chars = sorted(list(set(raw_text)))
@@ -114,7 +105,6 @@ next_chars = []
 for i in range(0, len(raw_text) - seq_length, step_size):
     sentences.append(raw_text[i: i + seq_length])
     next_chars.append(raw_text[i + seq_length])
-
 
 if shuffle_sentences:
     # Shuffle data
@@ -135,6 +125,10 @@ logger.info("Total Vocab: " + str(n_vocab))
 logger.info("Total Words: " + str(len(raw_text.split())))
 logger.info("Total Unique Words: " + str(len(set(raw_text.split()))))
 logger.info("Total Patterns: " + str(n_patterns))
+for i in range(10):
+    random_index = random.randint(1,len(sentences))
+    logger.info("Example sentence: " + '"'  + str(sentences[random_index]) + '"'
+                + " followed by the character: " + '"' + str(next_chars[random_index]) + '"')
 
 """
 #Problem: Way to large ram usage
@@ -169,7 +163,6 @@ Y = Y[s]
 
 """
 
-
 # define the LSTM model
 model = Sequential()
 model.add(LSTM(1024, input_shape=(seq_length, len(chars)), return_sequences=True))
@@ -184,7 +177,6 @@ adam = Adam(lr=learning_rate) # lr 0.001 --> default adam
 sgd = SGD(lr=learning_rate, momentum=0.9, nesterov=True) # lr 0.001 --> default adam
 rmsprop = RMSprop(lr=learning_rate)
 model.save('models/current_model.hdf5')  # Save model as template, weights are updated during runtime
-
 
 # if multiple gpus, change before compile
 if _multi_gpu:
@@ -206,8 +198,6 @@ def log_func(txt):
     logger.info(txt)
 logger.info(model.summary(print_fn=log_func))
 
-
-
 # define the checkpoint
 if _load_model:
     try:
@@ -215,7 +205,6 @@ if _load_model:
         model.load_weights('models/current_weights.h5')
     except:
         print('Something went wrong. No model loaded')
-
 
 def sample(preds, temperature=1.0):
     """From what I have gathered, the code makes the output more "variable", since if for an example if you get
@@ -228,7 +217,6 @@ def sample(preds, temperature=1.0):
     preds = exp_preds / np.sum(exp_preds)
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
-
 
 def write_a_book():
     book_file = open('generated_book.txt', 'w', encoding=encoding)
@@ -261,7 +249,6 @@ def write_a_book():
     book_file.close()
     quit()
 
-
 if _write_book:
     write_a_book()
 
@@ -284,6 +271,7 @@ tensorboard = TensorBoard(log_dir='./tensorboard', histogram_freq=1,
 if not _load_model:
     # Clear previous tensorboards
     files = glob.glob('tensorboard/*')
+    print("FILES", str(files))
     for f in files:
         os.remove(f)
 
@@ -351,7 +339,6 @@ for iteration in range(iterations_train):
             #print(f'Generated {i} out of {generated_chars} characters', end='\r')
         #print('\t\t\t\t\t', end='\r') # Prev print is too long
         logger.info(f'Temperature: {temp}, Generated text: \n' + generated_text)
-
 
 print('Done')
 plt.savefig('train.png')
