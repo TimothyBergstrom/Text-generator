@@ -297,7 +297,7 @@ for iteration in range(iterations_train):
         for t, char in enumerate(sentence):
             X[i, t, char_to_int[char]] = 1
         Y[i, char_to_int[next_chars_chunks[chunk_loop][i]]] = 1
-        print(f'Reshapening  {i} out of {len(sentences_chunks[chunk_loop])} sentences', end='\r')
+        print(f'Reshaping  {i} out of {len(sentences_chunks[chunk_loop])} sentences', end='\r')
     chunk_loop += 1
     if chunk_loop > len(sentences_chunks)-1:
         chunk_loop = 0
