@@ -8,6 +8,7 @@ batch_size = 2048
 chunk_size = 200000
 epochs = 2
 shuffle_sentences = True
+use_tensorboard = False
 _use_gpu = True
 _multi_gpu = True
 step_size = 1
@@ -208,7 +209,7 @@ if _load_model:
 
 def sample(preds, temperature=1.0):
     """From what I have gathered, the code makes the output more "variable", since if for an example if you get
-    Ha, the model might always assume it's Harry while the true word is Hagrid.
+    the characters "Ha", the model might always assume it's "Harry" while the true word is "Hagrid".
     Low temp = conservative, High temp = more creative
     helper function to sample an index from a probability array"""
     preds = np.asarray(preds).astype('float64')
@@ -247,7 +248,7 @@ def write_a_book():
         book_file.write("\n" + '-' * 50 + '\n')
         print(f'Temperature: {temp}, Generated text: \n' + generated_text)
     book_file.close()
-    quit()
+    sys.exit(0)
 
 if _write_book:
     write_a_book()
@@ -262,11 +263,13 @@ plt.show(block=False)
 history_loss_save = []
 history_val_loss_save = []
 
-#model.load_weights('models/weights-improvement-00-0.0483.hdf5')
+
+callbacks_list = []
 filepath = "models/weights-improvement-{epoch:02d}-{loss:.4f}.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='val_loss', verbose=0, save_best_only=True, mode='min')
-tensorboard = TensorBoard(log_dir='./tensorboard', histogram_freq=1,
-                          write_graph=True, write_images=False)
+if use_tensorboard:
+    tensorboard = TensorBoard(log_dir='./tensorboard')  #histogram_freq=1, write_graph=True, write_images=False)
+    callbacks_list.append(tensorboard)
 
 if not _load_model:
     # Clear previous tensorboards
@@ -274,10 +277,6 @@ if not _load_model:
     print("FILES", str(files))
     for f in files:
         os.remove(f)
-
-# callbacks_list = [checkpoint]
-callbacks_list = [tensorboard]
-
 
 sentences_chunks = []
 next_chars_chunks = []
