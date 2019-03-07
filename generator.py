@@ -4,10 +4,11 @@ iterations_train = 200
 generated_chars = 100
 generated_chars_book = 1000
 learning_rate = 0.001  # Higher lr does not mean it's faster!!
-batch_size = 256
-chunk_size = 100000
+batch_size = 2048
+chunk_size = 200000
 epochs = 2
 _use_gpu = True
+_multi_gpu = True
 step_size = 1
 _write_book = False
 _load_model = False
@@ -33,6 +34,10 @@ config.gpu_options.allow_growth = True  # Stops tf allocating all memory
 session = tf.Session(config=config)
 print('Stopped tf of using all memory on gpu (only allocates whats needed)')
 
+# Sets keras backend to tensorflow
+import os
+os.environ['KERAS_BACKEND'] = 'tensorflow'
+
 #region Imports
 import sys
 import random
@@ -55,7 +60,6 @@ from keras.optimizers import SGD, Adam, RMSprop
 from keras.models import load_model
 import pdb
 import random
-import os
 import time
 import matplotlib
 # Needed to change plot position while calculating. NEEDS TO ADDED BEFORE pyplot import
@@ -70,6 +74,7 @@ if not _use_gpu:
 else:
     print('Using gpu...')
 #endregion
+
 
 #region Loading text
 os.chdir(os.path.dirname(os.path.abspath(__file__)))  # chdir(foldername(script_location))
@@ -167,7 +172,22 @@ model.add(Activation('softmax'))# Try with TimeDistributed
 adam = Adam(lr=learning_rate) # lr 0.001 --> default adam
 sgd = SGD(lr=learning_rate, momentum=0.9, nesterov=True) # lr 0.001 --> default adam
 rmsprop = RMSprop(lr=learning_rate)
+
+# if multiple gpus, change before compile
+if _multi_gpu:
+    from tensorflow.python.client import device_lib
+    devices = device_lib.list_local_devices()
+    gpu_count = 0
+    for device in devices:
+        if device.device_type == "GPU":
+            gpu_count += 1
+    print(f"Found {gpu_count} usable gpus")
+    from keras.utils.training_utils import multi_gpu_model
+    model = multi_gpu_model(model, gpus=gpu_count)
+
+# Compile model
 model.compile(loss='categorical_crossentropy', optimizer=rmsprop, metrics = ['accuracy'])
+
 # The only way (easy way) to log model summary
 def log_func(txt):
     logger.info(txt)
@@ -183,12 +203,6 @@ if _load_model:
     except:
         print('Something went wrong. No model loaded')
 
-#model.load_weights('models/weights-improvement-00-0.0483.hdf5')
-filepath = "models/weights-improvement-{epoch:02d}-{loss:.4f}.hdf5"
-checkpoint = ModelCheckpoint(filepath, monitor='loss', verbose=0, save_best_only=True, mode='min')
-callbacks_list = [checkpoint]
-# callbacks_list = []  #!!!! DISABLES IT
-#endregion
 
 def sample(preds, temperature=1.0):
     """From what I have gathered, the code makes the output more "variable", since if for an example if you get
@@ -247,6 +261,13 @@ plt.show(block=False)
 history_loss_save = []
 history_val_loss_save = []
 
+#model.load_weights('models/weights-improvement-00-0.0483.hdf5')
+filepath = "models/weights-improvement-{epoch:02d}-{loss:.4f}.hdf5"
+checkpoint = ModelCheckpoint(filepath, monitor='val_loss', verbose=0, save_best_only=True, mode='min')
+# callbacks_list = [checkpoint]
+callbacks_list = []  #!!!! DISABLES IT
+#endregion
+
 sentences_chunks = []
 next_chars_chunks = []
 for i in range(0, len(sentences), chunk_size): # 200 000 sentence chunks
@@ -274,6 +295,7 @@ for iteration in range(iterations_train):
     logger.info('-' * 10 + f'Iteration {iteration+1} out of {iterations_train}' + '-' * 10 )
     history = model.fit(X, Y, epochs=epochs, batch_size=batch_size,
                         validation_split=0.1, callbacks=callbacks_list)
+    model.save_weights('models/current_model.h5', overwrite=True)  # Multigpu, cannot save model but only weights
     logger.info('Loss: ' + str(round(history.history['loss'][-1], 4))
                 + ' Acc: ' + str(round(history.history['acc'][-1], 4))
                 + ' Val Loss: ' + str(round(history.history['val_loss'][-1], 4))
