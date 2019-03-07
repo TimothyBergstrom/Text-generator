@@ -177,7 +177,8 @@ model.add(Activation('softmax'))# Try with TimeDistributed
 adam = Adam(lr=learning_rate) # lr 0.001 --> default adam
 sgd = SGD(lr=learning_rate, momentum=0.9, nesterov=True) # lr 0.001 --> default adam
 rmsprop = RMSprop(lr=learning_rate)
-model.save('models/current_model.hdf5')  # Save model as template, weights are updated during runtime
+if not _load_model or _write_book:
+    model.save('models/current_model.hdf5')  # Save model as template, weights are updated during runtime
 
 # if multiple gpus, change before compile
 if _multi_gpu:
