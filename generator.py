@@ -1,4 +1,4 @@
-#region Parameters
+
 seq_length = 25
 iterations_train = 200
 generated_chars = 100
@@ -7,6 +7,7 @@ learning_rate = 0.001  # Higher lr does not mean it's faster!!
 batch_size = 2048
 chunk_size = 200000
 epochs = 2
+shuffle_sentences = True
 _use_gpu = True
 _multi_gpu = True
 step_size = 1
@@ -14,7 +15,7 @@ _write_book = False
 _load_model = False
 encoding = "utf-8-sig"  # or utf-8
 
-#region Logging start
+
 import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -24,7 +25,7 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.info('-' * 20 + 'START OF RUN' + '-' * 20)
-#endregion
+
 
 # -*- coding: utf-8 -*-
 logger.info('Loading modules')
@@ -38,7 +39,7 @@ print('Stopped tf of using all memory on gpu (only allocates whats needed)')
 import os
 os.environ['KERAS_BACKEND'] = 'tensorflow'
 
-#region Imports
+
 import sys
 import random
 import numpy as np
@@ -55,6 +56,7 @@ from keras.layers import Convolution1D
 from keras.layers import LSTM
 from keras.layers import TimeDistributed
 from keras.callbacks import ModelCheckpoint
+from keras.callbacks import TensorBoard
 from keras.utils import np_utils
 from keras.optimizers import SGD, Adam, RMSprop
 from keras.models import load_model
@@ -62,10 +64,11 @@ import pdb
 import random
 import time
 import matplotlib
+import glob
 # Needed to change plot position while calculating. NEEDS TO ADDED BEFORE pyplot import
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-#endregion
+
 
 if not _use_gpu:
     """Use gpu if you have many parameters in your model"""
@@ -73,10 +76,10 @@ if not _use_gpu:
     print('Using cpu...')
 else:
     print('Using gpu...')
-#endregion
 
 
-#region Loading text
+
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))  # chdir(foldername(script_location))
 os.chdir('books')
 # load ascii text and covert to lowercase
@@ -85,9 +88,9 @@ for filename in os.listdir():
     with open(filename, 'r', encoding=encoding, errors='ignore') as f: # Ignore crappy chars
         raw_text += f.read()
 os.chdir('..')
-#endregion
 
-#region Preprocess text
+
+
 # Lower test data size
 #raw_text = raw_text[:int(1e6)]
 # Remove
@@ -96,9 +99,9 @@ os.chdir('..')
 raw_text = raw_text.replace('  ', '')  # Remove double spaces
 raw_text = raw_text.replace('\t', '')  # Remove tabs
 #raw_text = ' '.join(raw_text.split())  # Remove double spaces
-#endregion
 
-#region Fixing sentences and vecorization
+
+
 # create mapping of unique chars to integers, and a reverse mapping
 chars = sorted(list(set(raw_text)))
 char_to_int = dict((c, i) for i, c in enumerate(chars))
@@ -112,8 +115,16 @@ for i in range(0, len(raw_text) - seq_length, step_size):
     sentences.append(raw_text[i: i + seq_length])
     next_chars.append(raw_text[i + seq_length])
 
-# This needs about 1 gb of ram
 
+if shuffle_sentences:
+    # Shuffle data
+    z = list(zip(sentences, next_chars))
+    # => [('Spears', 1), ('Adele', 2), ('NDubz', 3), ('Nicole', 4), ('Cristina', 5)]
+    random.shuffle(z)
+    sentences, next_chars = zip(*z)
+    z = ""  # Clear from ram
+
+# This needs about 1 gb of ram
 # summarize the loaded data
 n_chars = len(raw_text)
 n_vocab = len(chars)
@@ -155,10 +166,10 @@ Y = Y[s]
 #Y = np_utils.to_categorical(Y)  # Old code
 #print('X: ' + str(X.shape))
 #print('Y: ' + str(Y.shape))
-#endregion
+
 """
 
-#region Model
+
 # define the LSTM model
 model = Sequential()
 model.add(LSTM(1024, input_shape=(seq_length, len(chars)), return_sequences=True))
@@ -172,6 +183,8 @@ model.add(Activation('softmax'))# Try with TimeDistributed
 adam = Adam(lr=learning_rate) # lr 0.001 --> default adam
 sgd = SGD(lr=learning_rate, momentum=0.9, nesterov=True) # lr 0.001 --> default adam
 rmsprop = RMSprop(lr=learning_rate)
+model.save('models/current_model.hdf5')  # Save model as template, weights are updated during runtime
+
 
 # if multiple gpus, change before compile
 if _multi_gpu:
@@ -192,14 +205,14 @@ model.compile(loss='categorical_crossentropy', optimizer=rmsprop, metrics = ['ac
 def log_func(txt):
     logger.info(txt)
 logger.info(model.summary(print_fn=log_func))
-#endregion
 
-#region Callbacks
+
+
 # define the checkpoint
 if _load_model:
     try:
-        model_name = input('Model name: ')
-        model = load_model('models/' + model_name)
+        model = load_model('models/current_model.hdf5')
+        model.load_weights('models/current_weights.h5')
     except:
         print('Something went wrong. No model loaded')
 
@@ -216,9 +229,8 @@ def sample(preds, temperature=1.0):
     probas = np.random.multinomial(1, preds, 1)
     return np.argmax(probas)
 
-#region Write with model
-if _write_book:
-    # pick a random seed
+
+def write_a_book():
     book_file = open('generated_book.txt', 'w', encoding=encoding)
     start_index = random.randint(0, len(raw_text) - seq_length - 1)
     sentence = raw_text[start_index: start_index + seq_length]
@@ -248,9 +260,11 @@ if _write_book:
         print(f'Temperature: {temp}, Generated text: \n' + generated_text)
     book_file.close()
     quit()
-#endregion
 
-#region Train model
+
+if _write_book:
+    write_a_book()
+
 plt.figure()
 plt.grid()
 plt.title('model loss')
@@ -264,9 +278,18 @@ history_val_loss_save = []
 #model.load_weights('models/weights-improvement-00-0.0483.hdf5')
 filepath = "models/weights-improvement-{epoch:02d}-{loss:.4f}.hdf5"
 checkpoint = ModelCheckpoint(filepath, monitor='val_loss', verbose=0, save_best_only=True, mode='min')
+tensorboard = TensorBoard(log_dir='./tensorboard', histogram_freq=1,
+                          write_graph=True, write_images=False)
+
+if not _load_model:
+    # Clear previous tensorboards
+    files = glob.glob('tensorboard/*')
+    for f in files:
+        os.remove(f)
+
 # callbacks_list = [checkpoint]
-callbacks_list = []  #!!!! DISABLES IT
-#endregion
+callbacks_list = [tensorboard]
+
 
 sentences_chunks = []
 next_chars_chunks = []
@@ -294,8 +317,9 @@ for iteration in range(iterations_train):
 
     logger.info('-' * 10 + f'Iteration {iteration+1} out of {iterations_train}' + '-' * 10 )
     history = model.fit(X, Y, epochs=epochs, batch_size=batch_size,
-                        validation_split=0.1, callbacks=callbacks_list)
-    model.save_weights('models/current_model.h5', overwrite=True)  # Multigpu, cannot save model but only weights
+                        validation_split=0.1, callbacks=callbacks_list,
+                        shuffle=True)
+    model.save_weights('models/current_weights.h5', overwrite=True)  # Multigpu, cannot save model but only weights
     logger.info('Loss: ' + str(round(history.history['loss'][-1], 4))
                 + ' Acc: ' + str(round(history.history['acc'][-1], 4))
                 + ' Val Loss: ' + str(round(history.history['val_loss'][-1], 4))
@@ -327,7 +351,7 @@ for iteration in range(iterations_train):
             #print(f'Generated {i} out of {generated_chars} characters', end='\r')
         #print('\t\t\t\t\t', end='\r') # Prev print is too long
         logger.info(f'Temperature: {temp}, Generated text: \n' + generated_text)
-#endregion
+
 
 print('Done')
 plt.savefig('train.png')
