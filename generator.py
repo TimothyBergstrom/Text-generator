@@ -1,4 +1,3 @@
-
 seq_length = 25
 iterations_train = 200
 generated_chars = 100
@@ -37,7 +36,6 @@ print('Stopped tf of using all memory on gpu (only allocates whats needed)')
 # Sets keras backend to tensorflow
 import os
 os.environ['KERAS_BACKEND'] = 'tensorflow'
-
 
 import sys
 import random
@@ -110,14 +108,12 @@ def write_a_book():
     book_file.close()
     sys.exit(0)
 
-
 if not _use_gpu:
     """Use gpu if you have many parameters in your model"""
     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
     print('Using cpu...')
 else:
     print('Using gpu...')
-
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))  # chdir(foldername(script_location))
 os.chdir('books')
@@ -130,12 +126,11 @@ os.chdir('..')
 
 # Lower test data size
 #raw_text = raw_text[:int(1e6)]
-# Remove
+# Clean the data
 #raw_text = raw_text.lower()  # Remove lower case
-#raw_text = raw_text.replace('\n', ' ')  # Fix so that new line does not matter
+raw_text = raw_text.replace('\n\n', '')  # Fix so that multiple newlines are removed
 raw_text = raw_text.replace('  ', '')  # Remove double spaces
 raw_text = raw_text.replace('\t', '')  # Remove tabs
-#raw_text = ' '.join(raw_text.split())  # Remove double spaces
 
 # create mapping of unique chars to integers, and a reverse mapping
 chars = sorted(list(set(raw_text)))
