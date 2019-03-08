@@ -1,9 +1,9 @@
 seq_length = 25
-iterations_train = 200
+iterations_train = 10000
 generated_chars = 100
 generated_chars_book = 10000
 learning_rate = 0.001  # Higher lr does not mean it's faster!!
-batch_size = 2048
+batch_size = 3012
 chunk_size = 200000
 epochs = 2
 shuffle_sentences = True
@@ -11,7 +11,7 @@ use_tensorboard = False
 _use_gpu = True
 _multi_gpu = True
 step_size = 1
-_write_book = True
+_write_book = False
 _load_model = True
 encoding = "utf-8-sig"  # or utf-8
 
@@ -128,8 +128,9 @@ os.chdir('..')
 #raw_text = raw_text[:int(1e6)]
 # Clean the data
 #raw_text = raw_text.lower()  # Remove lower case
-raw_text = raw_text.replace('\n\n', '')  # Fix so that multiple newlines are removed
-raw_text = raw_text.replace('  ', '')  # Remove double spaces
+raw_text = ''.join([i if ord(i) < 200 else ' ' for i in raw_text])
+raw_text = raw_text.replace('\n\n', ' ')  # Fix so that multiple newlines are removed
+raw_text = raw_text.replace('  ', '')  # Remove double spaces, can be caused by the replacement above
 raw_text = raw_text.replace('\t', '')  # Remove tabs
 
 # create mapping of unique chars to integers, and a reverse mapping
@@ -168,39 +169,6 @@ for i in range(10):
     random_index = random.randint(1,len(sentences))
     logger.info("Example sentence: " + '"'  + str(sentences[random_index]) + '"'
                 + " followed by the character: " + '"' + str(next_chars[random_index]) + '"')
-
-"""
-#Problem: Way to large ram usage
-print('Vectorization...')
-X = np.zeros((len(sentences), seq_length, len(chars)))
-Y = np.zeros((len(sentences), len(chars)))
-for i, sentence in enumerate(sentences):
-    for t, char in enumerate(sentence):
-        X[i, t, char_to_int[char]] = 1
-    Y[i, char_to_int[next_chars[i]]] = 1
-
-# X is [samples, time steps, features]
-#logger.info('Dataset is ' + str(X.nbytes/1e6) + ' mb in memory')
-
-"""
-
-"""
-print('Shuffling data...')  # To shuffle or not to shuffle... that is the question
-np.random.seed(1) # fix random seed for reproducing results
-# SHUFFLE, without it, ROC and AUC doesnt work, bad results etc
-s = np.arange(X.shape[0])
-np.random.shuffle(s)
-X = X[s]
-Y = Y[s]
-"""
-
-"""
-#one hot encode the output variable
-#Y = np_utils.to_categorical(Y)  # Old code
-#print('X: ' + str(X.shape))
-#print('Y: ' + str(Y.shape))
-
-"""
 
 # define the LSTM model
 model = Sequential()
@@ -280,8 +248,11 @@ for i in range(0, len(sentences), chunk_size): # 200 000 sentence chunks
         sentences_chunks.append(sentences[i:i+chunk_size])
         next_chars_chunks.append(next_chars[i:i+chunk_size])
     else:
+        # This prevents overlapping of chunks
         sentences_chunks.append(sentences[i-seq_length:i + chunk_size])
         next_chars_chunks.append(next_chars[i-seq_length:i + chunk_size])
+
+logger.info('Train chunks: ' + str(len(sentences_chunks)) + " total chunks")
 
 chunk_loop = 0
 for iteration in range(iterations_train):
@@ -316,6 +287,7 @@ for iteration in range(iterations_train):
     plt.plot(history_val_loss_save, 'b-')
     plt.legend(['train', 'test'], loc='upper left')
     plt.pause(0.0000001)
+    plt.savefig('train.png')
 
     # Write out how it looks
     start_index = random.randint(0, len(raw_text) - seq_length - 1) # pick a random seed
