@@ -2,7 +2,7 @@
 seq_length = 25
 iterations_train = 200
 generated_chars = 100
-generated_chars_book = 1000
+generated_chars_book = 10000
 learning_rate = 0.001  # Higher lr does not mean it's faster!!
 batch_size = 2048
 chunk_size = 200000
@@ -12,8 +12,8 @@ use_tensorboard = False
 _use_gpu = True
 _multi_gpu = True
 step_size = 1
-_write_book = False
-_load_model = False
+_write_book = True
+_load_model = True
 encoding = "utf-8-sig"  # or utf-8
 
 import logging
@@ -67,6 +67,49 @@ import glob
 # Needed to change plot position while calculating. NEEDS TO ADDED BEFORE pyplot import
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+
+def sample(preds, temperature=1.0):
+    """From what I have gathered, the code makes the output more "variable", since if for an example if you get
+    the characters "Ha", the model might always assume it's "Harry" while the true word is "Hagrid".
+    Low temp = conservative, High temp = more creative
+    helper function to sample an index from a probability array"""
+    preds = np.asarray(preds).astype('float64')
+    preds = np.log(preds + 1e-8) / temperature
+    exp_preds = np.exp(preds)
+    preds = exp_preds / np.sum(exp_preds)
+    probas = np.random.multinomial(1, preds, 1)
+    return np.argmax(probas)
+
+def write_a_book():
+    book_file = open('generated_book.txt', 'w', encoding=encoding)
+    start_index = random.randint(0, len(raw_text) - seq_length - 1)
+    sentence = raw_text[start_index: start_index + seq_length]
+    target_book = raw_text[start_index + seq_length: start_index + seq_length + 100]
+    book_file.write("Seed: \n" + sentence)
+    print("Seed: \n" + sentence)
+    book_file.write("\n" + '-' * 50 + '\n')
+    book_file.write("\nTarget: \n" + target_book)  # When not writing log file, no \n is applied, so \n at start
+    print("Target: \n" + target_book)
+    book_file.write("\n" + '-' * 50 + '\n')
+    for temp in [0.01, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2]:
+        generated_text = ''
+        for i in range(generated_chars_book):
+            x_pred = np.zeros((1, seq_length, len(chars)))
+            for t, char in enumerate(sentence):
+                x_pred[0, t, char_to_int[char]] = 1.
+            preds = model.predict(x_pred, verbose=0)[0]
+            next_index = sample(preds, temp)
+            next_char = int_to_char[next_index]
+            generated_text += next_char
+            sentence = sentence[1:] + next_char
+            print(f'Generated {i} out of {generated_chars_book} characters', end='\r')
+        print('\t\t\t\t\t', end='\r') # Prev print is too long
+        book_file.write(f'\nTemperature: {temp}, Generated text: \n' + generated_text)
+        book_file.write("\n" + '-' * 50 + '\n')
+        print(f'Temperature: {temp}, Generated text: \n' + generated_text)
+    book_file.close()
+    sys.exit(0)
+
 
 if not _use_gpu:
     """Use gpu if you have many parameters in your model"""
@@ -177,8 +220,19 @@ model.add(Activation('softmax'))# Try with TimeDistributed
 adam = Adam(lr=learning_rate) # lr 0.001 --> default adam
 sgd = SGD(lr=learning_rate, momentum=0.9, nesterov=True) # lr 0.001 --> default adam
 rmsprop = RMSprop(lr=learning_rate)
-if not _load_model or _write_book:
+
+# The only way (easy way) to log model summary
+def log_func(txt):
+    logger.info(txt)
+logger.info(model.summary(print_fn=log_func))
+
+if not (_load_model or _write_book):
     model.save('models/current_model.hdf5')  # Save model as template, weights are updated during runtime
+
+
+# define the checkpoint
+if _load_model or _write_book:
+    model.load_weights('models/current_weights.h5')
 
 # if multiple gpus, change before compile
 if _multi_gpu:
@@ -190,66 +244,12 @@ if _multi_gpu:
             gpu_count += 1
     print(f"Found {gpu_count} usable gpus")
     from keras.utils.training_utils import multi_gpu_model
-    model = multi_gpu_model(model, gpus=gpu_count)
+    parallel_model = multi_gpu_model(model, gpus=gpu_count)
 
-# Compile model
-model.compile(loss='categorical_crossentropy', optimizer=rmsprop, metrics = ['accuracy'])
-
-# The only way (easy way) to log model summary
-def log_func(txt):
-    logger.info(txt)
-logger.info(model.summary(print_fn=log_func))
-
-# define the checkpoint
-if _load_model:
-    try:
-        model = load_model('models/current_model.hdf5')
-        model.load_weights('models/current_weights.h5')
-    except:
-        print('Something went wrong. No model loaded')
-
-def sample(preds, temperature=1.0):
-    """From what I have gathered, the code makes the output more "variable", since if for an example if you get
-    the characters "Ha", the model might always assume it's "Harry" while the true word is "Hagrid".
-    Low temp = conservative, High temp = more creative
-    helper function to sample an index from a probability array"""
-    preds = np.asarray(preds).astype('float64')
-    preds = np.log(preds + 1e-8) / temperature
-    exp_preds = np.exp(preds)
-    preds = exp_preds / np.sum(exp_preds)
-    probas = np.random.multinomial(1, preds, 1)
-    return np.argmax(probas)
-
-def write_a_book():
-    book_file = open('generated_book.txt', 'w', encoding=encoding)
-    start_index = random.randint(0, len(raw_text) - seq_length - 1)
-    sentence = raw_text[start_index: start_index + seq_length]
-    target_book = raw_text[start_index + seq_length: start_index + seq_length + generated_chars_book]
-    book_file.write("Seed: \n" + sentence)
-    print("Seed: \n" + sentence)
-    book_file.write("\n" + '-' * 50 + '\n')
-    book_file.write("\nTarget: \n" + target_book)  # When not writing log file, no \n is applied, so \n at start
-    print("Target: \n" + target_book)
-    book_file.write("\n" + '-' * 50 + '\n')
-    for temp in [0.01, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2]:
-        generated_text = ''
-        # region generate characters
-        for i in range(5000):
-            x_pred = np.zeros((1, seq_length, len(chars)))
-            for t, char in enumerate(sentence):
-                x_pred[0, t, char_to_int[char]] = 1.
-            preds = model.predict(x_pred, verbose=0)[0]
-            next_index = sample(preds, temp)
-            next_char = int_to_char[next_index]
-            generated_text += next_char
-            sentence = sentence[1:] + next_char
-            print(f'Generated {i} out of 5000 characters', end='\r')
-        print('\t\t\t\t\t', end='\r') # Prev print is too long
-        book_file.write(f'\nTemperature: {temp}, Generated text: \n' + generated_text)
-        book_file.write("\n" + '-' * 50 + '\n')
-        print(f'Temperature: {temp}, Generated text: \n' + generated_text)
-    book_file.close()
-    sys.exit(0)
+if _multi_gpu:
+    parallel_model.compile(loss='categorical_crossentropy', optimizer=rmsprop, metrics = ['accuracy'])
+else:
+    model.compile(loss='categorical_crossentropy', optimizer=rmsprop, metrics = ['accuracy'])
 
 if _write_book:
     write_a_book()
@@ -263,7 +263,6 @@ plt.legend(['train', 'test'], loc='upper left')
 plt.show(block=False)
 history_loss_save = []
 history_val_loss_save = []
-
 
 callbacks_list = []
 filepath = "models/weights-improvement-{epoch:02d}-{loss:.4f}.hdf5"
@@ -291,7 +290,6 @@ for i in range(0, len(sentences), chunk_size): # 200 000 sentence chunks
 
 chunk_loop = 0
 for iteration in range(iterations_train):
-
     X = np.zeros((len(sentences_chunks[chunk_loop]), seq_length, len(chars))) # X is [samples, time steps, features]
     Y = np.zeros((len(sentences_chunks[chunk_loop]), len(chars))) # Y is [samples, features]
     for i, sentence in enumerate(sentences_chunks[chunk_loop]):
@@ -304,10 +302,15 @@ for iteration in range(iterations_train):
         chunk_loop = 0
 
     logger.info('-' * 10 + f'Iteration {iteration+1} out of {iterations_train}' + '-' * 10 )
-    history = model.fit(X, Y, epochs=epochs, batch_size=batch_size,
-                        validation_split=0.1, callbacks=callbacks_list,
-                        shuffle=True)
-    model.save_weights('models/current_weights.h5', overwrite=True)  # Multigpu, cannot save model but only weights
+    if _multi_gpu:
+        history = parallel_model.fit(X, Y, epochs=epochs, batch_size=batch_size,
+                                     validation_split=0.1, callbacks=callbacks_list,
+                                     shuffle=True)
+    else:
+        history = model.fit(X, Y, epochs=epochs, batch_size=batch_size,
+                            validation_split=0.1, callbacks=callbacks_list,
+                            shuffle=True)
+    model.save('models/current_weights.h5', overwrite=True)  # Multigpu, save template model
     logger.info('Loss: ' + str(round(history.history['loss'][-1], 4))
                 + ' Acc: ' + str(round(history.history['acc'][-1], 4))
                 + ' Val Loss: ' + str(round(history.history['val_loss'][-1], 4))
@@ -342,4 +345,3 @@ for iteration in range(iterations_train):
 
 print('Done')
 plt.savefig('train.png')
-model.save('Finished_model.hdf5')
