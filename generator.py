@@ -62,6 +62,7 @@ import random
 import time
 import matplotlib
 import glob
+import re
 # Needed to change plot position while calculating. NEEDS TO ADDED BEFORE pyplot import
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
@@ -130,6 +131,7 @@ raw_text = ''.join([i if ord(i) < 200 else ' ' for i in raw_text])  # Remove wei
 raw_text = raw_text.replace('\n\n', ' ')  # Fix so that multiple newlines are removed
 raw_text = raw_text.replace('  ', '')  # Remove double spaces, can be caused by the replacement above
 raw_text = raw_text.replace('\t', '')  # Remove tabs
+raw_text = re.sub(r'(?<=[.,?])(?=[^\s])', r' ', raw_text)  # This should fix where there are no spaces between . and characters
 
 # Lower test data size
 #raw_text = raw_text[:int(1e6)]
