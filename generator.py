@@ -12,7 +12,7 @@ _use_gpu = True
 _multi_gpu = True
 step_size = 1
 _write_book = False
-_load_model = True
+_load_model = False
 encoding = "utf-8-sig"  # or utf-8
 
 import logging
@@ -124,14 +124,15 @@ for filename in os.listdir():
         raw_text += f.read()
 os.chdir('..')
 
-# Lower test data size
-#raw_text = raw_text[:int(1e6)]
 # Clean the data
 #raw_text = raw_text.lower()  # Remove lower case
-raw_text = ''.join([i if ord(i) < 200 else ' ' for i in raw_text])
+raw_text = ''.join([i if ord(i) < 200 else ' ' for i in raw_text])  # Remove weird characters
 raw_text = raw_text.replace('\n\n', ' ')  # Fix so that multiple newlines are removed
 raw_text = raw_text.replace('  ', '')  # Remove double spaces, can be caused by the replacement above
 raw_text = raw_text.replace('\t', '')  # Remove tabs
+
+# Lower test data size
+#raw_text = raw_text[:int(1e6)]
 
 # create mapping of unique chars to integers, and a reverse mapping
 chars = sorted(list(set(raw_text)))
@@ -149,7 +150,6 @@ for i in range(0, len(raw_text) - seq_length, step_size):
 if shuffle_sentences:
     # Shuffle data
     z = list(zip(sentences, next_chars))
-    # => [('Spears', 1), ('Adele', 2), ('NDubz', 3), ('Nicole', 4), ('Cristina', 5)]
     random.shuffle(z)
     sentences, next_chars = zip(*z)
     z = ""  # Clear from ram
